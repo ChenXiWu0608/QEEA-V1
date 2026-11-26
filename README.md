@@ -51,6 +51,7 @@ run_pipeline.py            Entry point: runs Steps 1–5 + verify()
 pipeline_sources.py        Shared module (judge list, aliases, helpers, AST-extracted word helpers)
 requirements.txt           Python dependencies
 evaluation_pipeline.md     Current pipeline specification (Japanese, 2026-10-27)
+PROMPTS.md                 Index of judge prompts / judgement criteria (reviewer Q10)
 
 step1_Test calibration/    100-item calibration sets, judge & penalty weight results, chart export
 step2.1_Penalty/           Length-penalty saved judgements, length_protocol.json, Penalty.json (prompts)
@@ -66,6 +67,17 @@ scripts/                   Data-preparation scripts (RAW → annotated Dataset)
 length_rejudge_20261026/   Length re-judgement run (81 responses / 405 judgement units)
 archive/legacy_code/       Dead one-off scripts, archived (see archive/LEGACY_README.md)
 ```
+
+## Judge prompts (判定プロンプトの所在)
+
+The complete judgement criteria and prompts given to the evaluation models are in this
+repository; see **[PROMPTS.md](PROMPTS.md)** for exact file paths:
+
+- Win/loss (勝敗判定) system & user prompts: `step2.2_vs_baseline/dataset_vs_baseline_config.py`,
+  `step1_Test calibration/comparison_config.py` (`SYSTEM_PROMPT`, `build_user_prompt()`).
+- Usability (利用可能性判定) prompts, all 14 task categories: `step2.1_Penalty/Penalty.json`
+  (`system_prompt` / `user_prompt_template`), assembled by `step2.1_Penalty/penalty_evaluator_batch.py`.
+- Saved judge outputs (prompt + verdict + reason per judgement unit): `step2.1_Penalty/`, `step2.2_vs_baseline/`.
 
 ## Evaluation steps
 
@@ -167,6 +179,14 @@ python run_pipeline.py
 ```
 
 `run_pipeline.py` は6つのスクリプトを順次実行し、最後に `verify()` でセル数・数値・入力ファイルのSHA-256を検証します。モデルAPIは呼び出しません。
+
+## 判定プロンプトの所在
+
+評価モデルに与えた判定基準とプロンプトの全文は **[PROMPTS.md](PROMPTS.md)** に所在を示します：
+
+- 勝敗判定：`step2.2_vs_baseline/dataset_vs_baseline_config.py` および `step1_Test calibration/comparison_config.py`（`SYSTEM_PROMPT` と `build_user_prompt()`）
+- 利用可能性判定（14タスクカテゴリ全件）：`step2.1_Penalty/Penalty.json`（`system_prompt` / `user_prompt_template`）、組み立てロジックは `step2.1_Penalty/penalty_evaluator_batch.py`
+- 全判定ユニットのプロンプト・判定結果・理由の記録：`step2.1_Penalty/`、`step2.2_vs_baseline/`
 
 ## 引用
 
