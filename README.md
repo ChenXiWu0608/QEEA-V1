@@ -147,6 +147,7 @@ If you use this data or pipeline, please cite **both** reports:
 
 - **Code**: MIT License — see [`LICENSE`](LICENSE).
 - **Data**: CC BY 4.0 — see [`DATA_LICENSE.md`](DATA_LICENSE.md). Attribution: Wu Chenxi, Tominobe Laboratory, Waseda University; the two reports above.
+- **Third-party benchmarks**: small parts come from GPQA (CC BY 4.0), LiveCodeBench (upstream "cc"; problem statements © contest platforms), and Arena-Hard v2 (Apache-2.0). These keep their original licenses — see [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md).
 - The repository contains only model inference outputs and instrument power records — no personal data.
 - Derived data (judge records, calibrated weights, computed rankings) are published under the same terms as the raw data.
 - Data is deliberately shared between the two reports; when citing a specific figure, cite the report in which that figure appears.
@@ -201,6 +202,7 @@ BibTeXは上記英語セクション参照。
 
 - **コード**：MIT License（[`LICENSE`](LICENSE)）
 - **データ**：CC BY 4.0（[`DATA_LICENSE.md`](DATA_LICENSE.md)）— 表示: 呉晨㬢, 早稲田大学大学院環境・エネルギー研究科 納富研究室。上記2論文への言及を推奨。
+- **サードパーティ製ベンチマーク**：GPQA（CC BY 4.0）・LiveCodeBench（上流"cc"／問題文の著作権は各競技プラットフォームに帰属）・Arena-Hard v2（Apache-2.0）の各一部を含む。該当部分は原典のライセンスに従う（[`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md)参照）。
 - 本リポジトリはモデルの推論出力と計測電力記録のみを含み、個人情報を含みません。
 - 導出データ（判定記録・校正重み・ランキング）も原始データと同条項で公開します。
 - データは両論文で意図的に共有されています。特定の数値を引用する場合は、その数値が登場する論文を引用してください。

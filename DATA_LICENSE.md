@@ -26,6 +26,15 @@ data** and is therefore published without additional access controls.
 > Waseda University — *Open-Source LLM Cost-Optimized Inference* (Part 1 and
 > Part 2). Data: <URL of this repository>.
 
+## Third-party components (carve-out)
+
+Small portions of this repository originate from three public benchmarks — **GPQA**
+(CC BY 4.0), **LiveCodeBench** (upstream "cc"; problem statements © LeetCode /
+AtCoder / Codeforces), and **Arena-Hard v2** (Apache-2.0). Those portions remain under
+their original licenses and copyrights and are **not** licensed here. Full attribution,
+sources, and compliance notes (removed full GPQA copy; stripped LiveCodeBench test
+cases): see [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md).
+
 ## Shared with the first report
 
 The raw inference and energy records in `RAW/`, `Dataset/`, `Baseline/`, and
