@@ -1,0 +1,14 @@
+{
+  "validated_at": "2026-10-26T22:19:03.950181+09:00",
+  "manifest_sha256": "560015fc330ec476af3b5e721812c6b53842893740972531bd4a3e780e502ad1",
+  "answers": 81,
+  "payloads": 405,
+  "unique_payload_identities": 405,
+  "truncated_answers": 13,
+  "original_input_files_unchanged": 93,
+  "live_generation_requests_during_validation": 0,
+  "mock_request_and_persistence_passed": true,
+  "hard_only_score_replay_passed": true,
+  "baseline_wp_max_abs_error": 6.661338147750939e-16,
+  "baseline_final_score_max_abs_error": 1.1368683772161603e-13
+}

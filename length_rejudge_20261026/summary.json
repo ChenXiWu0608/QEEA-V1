@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-10-26T22:29:07.317084+09:00",
+  "manifest_sha256": "560015fc330ec476af3b5e721812c6b53842893740972531bd4a3e780e502ad1",
+  "expected_judgements": 405,
+  "completed_judgements": 405,
+  "remaining_judgements": 0,
+  "complete": true,
+  "per_judge": {
+    "ministral3_8b": 81,
+    "olmo3_7b": 81,
+    "llama3_1_8b": 81,
+    "gemma4_e4b": 81,
+    "qwen3_5_9b": 81
+  },
+  "transitions": {
+    "hard->hard": 8,
+    "hard->soft": 4,
+    "nice->hard": 10,
+    "nice->nice": 112,
+    "nice->soft": 131,
+    "soft->hard": 4,
+    "soft->nice": 2,
+    "soft->soft": 134
+  }
+}

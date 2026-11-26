@@ -1,0 +1,85 @@
+============================================================
+  EQE CALCULATION (Step 5)
+  Effective Quality per Energy
+============================================================
+
+--- Loading Q_total ---
+
+[Q_total] Loaded 220 rows, 22 unique base_models
+  After exclusion: 220 rows, 22 unique merge_keys
+  Reports: ['reports1', 'reports2']
+  Substeps: ['ArenaHard', 'GPQA', 'LiveCodeBench', 'Step2', 'Step3']
+
+--- Loading energy data ---
+Integrated 12/132 RAW power logs
+Integrated 24/132 RAW power logs
+Integrated 36/132 RAW power logs
+Integrated 48/132 RAW power logs
+Integrated 60/132 RAW power logs
+Integrated 72/132 RAW power logs
+Integrated 84/132 RAW power logs
+Integrated 96/132 RAW power logs
+Integrated 108/132 RAW power logs
+Integrated 120/132 RAW power logs
+Integrated 132/132 RAW power logs
+
+--- Computing EQE ---
+
+[Merge] Q_total rows: 220, matched with energy: 220 (100.0%)
+
+[EQE Summary]
+  ArenaHard: n=44, EQE_total [0.000000, 0.000161] mean=0.000040, EQE_gpu [0.000000, 0.000188] mean=0.000046
+  LiveCodeBench: n=44, EQE_total [0.000000, 0.001503] mean=0.000190, EQE_gpu [0.000000, 0.001765] mean=0.000218
+  GPQA: n=44, EQE_total [0.000000, 0.000562] mean=0.000134, EQE_gpu [0.000000, 0.000657] mean=0.000154
+  Step2: n=44, EQE_total [0.000000, 0.001779] mean=0.000614, EQE_gpu [0.000000, 0.002099] mean=0.000709
+  Step3: n=44, EQE_total [0.000000, 0.001793] mean=0.000545, EQE_gpu [0.000000, 0.002209] mean=0.000649
+
+--- Saving outputs ---
+  Saved eqe_ArenaHard_reports1.csv (22 rows)
+  Saved eqe_ArenaHard_reports2.csv (22 rows)
+  Saved eqe_ArenaHard.csv (22 rows, combined mean±std)
+  Saved eqe_LiveCodeBench_reports1.csv (22 rows)
+  Saved eqe_LiveCodeBench_reports2.csv (22 rows)
+  Saved eqe_LiveCodeBench.csv (22 rows, combined mean±std)
+  Saved eqe_GPQA_reports1.csv (22 rows)
+  Saved eqe_GPQA_reports2.csv (22 rows)
+  Saved eqe_GPQA.csv (22 rows, combined mean±std)
+  Saved eqe_Step2_reports1.csv (22 rows)
+  Saved eqe_Step2_reports2.csv (22 rows)
+  Saved eqe_Step2.csv (22 rows, combined mean±std)
+  Saved eqe_Step3_reports1.csv (22 rows)
+  Saved eqe_Step3_reports2.csv (22 rows)
+  Saved eqe_Step3.csv (22 rows, combined mean±std)
+  Saved eqe_all_reports1.csv (110 rows)
+  Saved eqe_all_reports2.csv (110 rows)
+  Saved eqe_all.csv (110 rows, combined mean±std)
+
+============================================================
+  SELF CHECK
+============================================================
+
+--- Report coverage ---
+  2 reports: 110 combos
+  1 report:  0 combos
+
+--- Models per substep ---
+  ArenaHard: 44 unique models
+  LiveCodeBench: 44 unique models
+  GPQA: 44 unique models
+  Step2: 44 unique models
+  Step3: 44 unique models
+
+--- Energy range (J) ---
+  ArenaHard: total [470803, 4502409] J, gpu [408928, 4040484] J
+  LiveCodeBench: total [38410, 3826073] J, gpu [32702, 3366548] J
+  GPQA: total [64103, 2831384] J, gpu [54860, 2498464] J
+  Step2: total [44005, 516175] J, gpu [37765, 463456] J
+  Step3: total [34017, 443189] J, gpu [28087, 388553] J
+
+--- NaN check ---
+  No NaN values [OK]
+
+============================================================
+  DONE
+============================================================
+

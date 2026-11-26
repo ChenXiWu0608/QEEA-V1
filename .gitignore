@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# OS / sync artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+.sync-conflict-*

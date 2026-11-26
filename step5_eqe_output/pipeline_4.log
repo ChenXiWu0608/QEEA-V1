@@ -1,0 +1,86 @@
+============================================================
+  Q_TOTAL CALCULATION (Step 4)
+============================================================
+
+--- Loading weights ---
+  Loaded win weights: 5 judges
+    gemma4_e4b: 0.226707
+    llama3.1_8b: 0.150746
+    ministral3_8b: 0.218768
+    olmo3_7b: 0.113447
+    qwen3.5_9b: 0.290331
+  Loaded penalty weights: 5 judges
+    gemma4_e4b: 0.233200
+    llama3.1_8b: 0.091224
+    ministral3_8b: 0.235024
+    olmo3_7b: 0.178038
+    qwen3.5_9b: 0.262514
+
+--- Loading ability scores ---
+  Loaded ability_scores: 1100 rows, 44 models
+  Models: 44, substeps: 5
+
+--- Loading and aggregating penalty ---
+  Groups: 1100, models: 44
+
+--- Computing WA, WP, Q_raw ---
+
+  Ability rows: 1100
+  Matched with penalty: 1100 (100.0%)
+  Unmatched (no penalty): 0
+  Result rows: 220
+
+--- Normalizing Q ---
+  Q_total NaN: 0
+
+--- Saving results ---
+  Saved q_total_results_reports1.csv (110 rows)
+  Saved q_total_results_reports2.csv (110 rows)
+  Saved q_total_results.csv (110 rows, combined mean+std)
+
+============================================================
+  SELF CHECK
+============================================================
+
+  Merge match rate:
+    Ability rows: 1100
+    Result rows: 220
+    Expected (unique model x substep): 220
+    MATCH OK
+
+  Substep distribution:
+    ArenaHard: 44 models, Q_total NaN=0
+    GPQA: 44 models, Q_total NaN=0
+    LiveCodeBench: 44 models, Q_total NaN=0
+    Step2: 44 models, Q_total NaN=0
+    Step3: 44 models, Q_total NaN=0
+
+  Q_raw range per substep:
+    ArenaHard: [-0.3758, 3.4293]  mean=1.1940
+    GPQA: [-0.9046, 1.9457]  mean=0.5296
+    LiveCodeBench: [-2.3637, 2.0952]  mean=0.3457
+    Step2: [-1.0363, 2.1104]  mean=1.0953
+    Step3: [-1.8455, 3.5776]  mean=1.3013
+
+  WA vs WP (overall means):
+    mean(WA) = 2.2850
+    mean(WP) = 1.3919
+    ratio WP/WA = 0.6091
+
+  Penalty judge coverage:
+    gemma4_e4b: 220 groups, avg items=46.4, NaN penalty groups=0
+    llama3.1_8b: 220 groups, avg items=46.4, NaN penalty groups=0
+    ministral3_8b: 220 groups, avg items=46.4, NaN penalty groups=0
+    olmo3_7b: 220 groups, avg items=46.4, NaN penalty groups=0
+    qwen3.5_9b: 220 groups, avg items=46.4, NaN penalty groups=0
+
+  n_pen_judges distribution:
+    {5: 220}
+
+  Negative Q_raw: 29 / 220 rows
+  (Negative Q_raw means penalty > ability -- expected for some models)
+
+============================================================
+  DONE
+============================================================
+

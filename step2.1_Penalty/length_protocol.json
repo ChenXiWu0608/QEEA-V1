@@ -1,0 +1,21 @@
+{
+  "version": "2026-10-27",
+  "evaluation_step": "Step2",
+  "hard_ratio_lower_exclusive": 0.5,
+  "hard_ratio_upper_exclusive": 1.5,
+  "soft_ratio_intervals": [
+    "[0.5,0.75)",
+    "(1.25,1.5]"
+  ],
+  "within_length_range": "[0.75,1.25]",
+  "soft_is_advisory_to_judge": true,
+  "hard_is_deterministic": true,
+  "english_count": "regex words",
+  "japanese_chinese_count": "non-whitespace characters",
+  "calibration_weights": "100-item historical calibration retained unchanged",
+  "rejudged_answers": 81,
+  "rejudged_judge_cells": 405,
+  "rejudgement_source": "length_rejudge_20261026/judgements.jsonl",
+  "rejudgement_source_sha256": "f2f469e14fff9933adac8ab02e91840198b73f8f1b9221bc97a5886ccb878248",
+  "rollback_archive": "revision_20261027_length_sync/backup_before_sync.zip"
+}

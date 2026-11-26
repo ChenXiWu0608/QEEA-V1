@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-26T22:29:07.316583+09:00",
+  "manifest_sha256": "560015fc330ec476af3b5e721812c6b53842893740972531bd4a3e780e502ad1",
+  "baseline_wp_max_abs_error": 6.661338147750939e-16,
+  "baseline_final_score_max_abs_error": 1.1368683772161603e-13,
+  "judgements": 405,
+  "cells_per_scenario": 220,
+  "models_per_scenario": 22,
+  "fixed_inputs": [
+    "judge weights",
+    "ability scores",
+    "energy",
+    "nonselected LLM judgements"
+  ],
+  "official_outputs_modified": false
+}

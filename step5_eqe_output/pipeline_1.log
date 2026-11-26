@@ -1,0 +1,96 @@
+======================================================================
+STEP 0: Data Loading & Validation
+======================================================================
+Human comparisons loaded: 100
+  gemma4_e4b: 100 rows loaded
+  llama3.1_8b: 100 rows loaded
+  ministral3_8b: 100 rows loaded
+  olmo3_7b: 100 rows loaded
+  qwen3.5_9b: 100 rows loaded
+
+Verdict format validation:
+  WARN gemma4_e4b: vs_1 has 'error' (1 rows)
+  OK llama3.1_8b
+  OK ministral3_8b
+  OK olmo3_7b
+  OK qwen3.5_9b
+
+======================================================================
+STEP 1: Content Fingerprint Alignment
+======================================================================
+Human fingerprints: 100 unique, 0 missing (empty responses)
+  gemma4_e4b: 100 fingerprints, 0 missing
+  llama3.1_8b: 100 fingerprints, 0 missing
+  ministral3_8b: 100 fingerprints, 0 missing
+  olmo3_7b: 100 fingerprints, 0 missing
+  qwen3.5_9b: 100 fingerprints, 0 missing
+
+Common fingerprints (aligned across all 6 sources): 100
+
+======================================================================
+STEP 2: Build Verdict Matrix (Ordinal 1-5)
+======================================================================
+Aligned comparisons: 100
+  Human NA: 0
+  Model error vs_1: 1
+  Model error vs_2: 0
+
+Final verdict matrix: 100 rows x 6 columns
+Valid rows (at least one source non-NaN): 100
+
+======================================================================
+PART 1: Verdict Distribution (1~5 ordinal ratio)
+======================================================================
+gemma4_e4b          : Test<<Base= 6(  6.0%), Test<Base=23( 23.0%), Tie=65( 65.0%), Test>Base= 5(  5.0%), Test>>Base= 1(  1.0%)
+llama3.1_8b         : Test<<Base= 7(  7.0%), Test<Base=11( 11.0%), Tie=72( 72.0%), Test>Base=10( 10.0%), Test>>Base= 0(  0.0%)
+ministral3_8b       : Test<<Base=27( 27.0%), Test<Base=11( 11.0%), Tie=52( 52.0%), Test>Base= 6(  6.0%), Test>>Base= 4(  4.0%)
+olmo3_7b            : Test<<Base= 9(  9.0%), Test<Base=12( 12.0%), Tie=57( 57.0%), Test>Base=18( 18.0%), Test>>Base= 4(  4.0%)
+qwen3.5_9b          : Test<<Base=29( 29.0%), Test<Base= 7(  7.0%), Tie=52( 52.0%), Test>Base= 6(  6.0%), Test>>Base= 6(  6.0%)
+human               : Test<<Base=31( 31.0%), Test<Base=35( 35.0%), Tie=14( 14.0%), Test>Base=11( 11.0%), Test>>Base= 9(  9.0%)
+
+======================================================================
+PART 2: 6x6 Spearman Rank Correlation Matrix
+======================================================================
+               gemma4_e4b  llama3.1_8b  ministral3_8b  olmo3_7b  qwen3.5_9b  human
+gemma4_e4b          1.000        0.546          0.460     0.431       0.631  0.553
+llama3.1_8b         0.546        1.000          0.377     0.445       0.444  0.420
+ministral3_8b       0.460        0.377          1.000     0.240       0.518  0.478
+olmo3_7b            0.431        0.445          0.240     1.000       0.367  0.303
+qwen3.5_9b          0.631        0.444          0.518     0.367       1.000  0.604
+human               0.553        0.420          0.478     0.303       0.604  1.000
+
+======================================================================
+PART 3: Weight Calculation (Method B: r x acc)
+======================================================================
+        model   n  r_spearman      p_value  significant  acc_weighted    score
+   gemma4_e4b 100    0.552892 2.450964e-09         True         0.520 0.287504
+  llama3.1_8b 100    0.420159 1.349278e-05         True         0.455 0.191173
+ministral3_8b 100    0.478338 4.818173e-07         True         0.580 0.277436
+     olmo3_7b 100    0.302886 2.190765e-03         True         0.475 0.143871
+   qwen3.5_9b 100    0.603592 2.990834e-11         True         0.610 0.368191
+
+======================================================================
+FINAL WEIGHTS (omega_n)
+======================================================================
+  gemma4_e4b          : omega = 0.2267  (r=0.553, acc=0.520)*
+  llama3.1_8b         : omega = 0.1507  (r=0.420, acc=0.455)*
+  ministral3_8b       : omega = 0.2188  (r=0.478, acc=0.580)*
+  olmo3_7b            : omega = 0.1134  (r=0.303, acc=0.475)*
+  qwen3.5_9b          : omega = 0.2903  (r=0.604, acc=0.610)*
+  Sum of weights: 1.0000
+
+Results saved to:
+  - weight_calculation_results.csv
+  - spearman_correlation_matrix.csv
+
+======================================================================
+APPENDIX: Pairwise Valid Comparison Counts
+======================================================================
+               gemma4_e4b  llama3.1_8b  ministral3_8b  olmo3_7b  qwen3.5_9b  human
+gemma4_e4b            100          100            100       100         100    100
+llama3.1_8b           100          100            100       100         100    100
+ministral3_8b         100          100            100       100         100    100
+olmo3_7b              100          100            100       100         100    100
+qwen3.5_9b            100          100            100       100         100    100
+human                 100          100            100       100         100    100
+

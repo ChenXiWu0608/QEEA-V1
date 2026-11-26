@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-10-26T22:31:08.373459+09:00",
+  "answers": 81,
+  "unique_judgements": 405,
+  "generation_attempts": 405,
+  "failed_attempts": 0,
+  "retries": 0,
+  "original_source_files_unchanged": 93,
+  "new_hard_answers": 151,
+  "new_hard_by_language": {
+    "Chinese": 64,
+    "Japanese": 83,
+    "English": 4
+  },
+  "independent_cell_EQ_max_abs_error": 2.842170943040401e-14,
+  "independent_cell_EQEE_max_abs_error": 4.547473508864641e-13,
+  "independent_final_score_max_abs_error": 1.1368683772161603e-13,
+  "all_final_ranks_match": true,
+  "regex_fallback_responses_manually_checked": 12,
+  "official_results_modified": false
+}

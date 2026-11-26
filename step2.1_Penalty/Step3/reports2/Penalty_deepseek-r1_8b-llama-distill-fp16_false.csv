@@ -1,0 +1,3438 @@
+penalty_id,source_step,category,subcategory,language,prompt,response,ministral3_8b_verdict,ministral3_8b_reason,olmo3_7b_verdict,olmo3_7b_reason,llama3_1_8b_verdict,llama3_1_8b_reason,gemma4_e4b_verdict,gemma4_e4b_reason,qwen3_5_9b_verdict,qwen3_5_9b_reason
+1,Step3,customer_support,workflow_cs_simple,Japanese,今年の第2回研究室発表会の詳細を教えて。,"今年の第2回研究室発表会の詳細は、以下に記載されています。
+
+**日程：**  
+2025年6月21日（土）9:00～16:30  
+2025年6月25日（水）18:30～21:00  
+2025年6月26日（木）18:30～21:00  
+
+**場所：**  
+- 6月21日：西早稲田キャンパス 53号館 301室  
+- 6月25日、6月26日：Zoom（オンライン）  
+
+**内容：**  
+発表形式は、ドキュメント資料を用いた形式となり、1名で25分（発表15分、質疑・指導10分）。  
+
+**準備資料：**  
+- ドキュメント資料の作成方法は、環境・エネルギー学特別演習Aと同様。前日までにWaseda Moodleや研究科HPに掲載されている資料を使用し、ファイル名に「第3回発表資料（研究室・氏名）UL年月日」を記入し、指定フォルダにULすること。  
+- 所属研究室記入欄には、研究室名と共に、実質的に指導を仰いでいる教員名をカッコ書きで付記すること。  
+
+**発表の際：**  
+- 作成したドキュメント資料を携带し、前回の指摘事項や質問への回答も教員と学生で共有し、配布する。  
+- 発表日時が合わずない場合には、他学生と交渉し交代してもらい、担当教員（紙屋、野津）に報告すること。  
+
+**発表後：**  
+- 発表後1週間以内に、今回の指摘事項や质問内容を整理し、Waseda MoodleにULすること。  
+
+**詳細は、2025年度 第3回 環境・エネルギー学特別演習 B 予定表参照。**",hard,"The response contains multiple critical inaccuracies:
+  1. Incorrect event number (claims '第3回' instead of '第2回').
+  2. Incorrect presentation time (25 mins instead of 40 mins).
+  3. Incorrect submission instructions (e.g., 'Waseda Moodle' instead of 'BOX', wrong folder name format, and incorrect deadline reference).
+  4. Missing critical logistics (Zoom ID, passcode, and submission deadline for feedback).
+  5. Speculative content (e.g., '発表日時が合わずない場合' is not grounded in the provided facts).",nice,"All key facts are correctly provided: event name, dates/times (both physical and Zoom), location details, submission deadline, format, and post-presentation procedures. No factual errors or omissions detected.",soft,Missing one or more critical logistics: Specific Locations (53-301 & Zoom) and incorrect date for Zoom sessions,soft,"The response is mostly correct but misses critical details from the ground truth, such as the specific Zoom ID/Passcode for online sessions and the correct presentation time (40 mins vs 25 mins mentioned). It also incorrectly references the 3rd presentation in the final note.",soft,"The response provides correct dates and locations but contains factual errors regarding the event number (states '3rd' instead of '2nd') and presentation duration (states 25 mins instead of the ground truth 40 mins). Additionally, it includes irrelevant instructions about document naming conventions not present in the ground truth."
+2,Step3,customer_support,workflow_cs_conflict,Japanese,今年の第3回研究室発表会と特別演習Bの日程はかぶることがあるか？,"今年の第3回研究室発表会と特別演習Bの日程はかぶることがあるか？
+
+2025年11月16日現在、今年の第3回研究室発表会と特別演習Bの日程は以下のようにかぶることがあると見える：
+
+- **発表会日程**:
+  - 10月4日（土）10:05～15:15
+  - 10月11日（土）10:05～14:25
+
+- **特別演習B日程**:
+  - 同上
+
+両者は同一日程を共有しているため、日程がかぶることがある。
+
+■ 詳細は以下の通り：
+- 場所：西早稲田キャンパス 60号館 206、308、304 号室内
+- 内容：2024年4月入学者は、研究の進捗状況と以後実施する事項を具体的に説明、“修論目次案（章構成）も記載”。2024年9月入学者は、修士1年時の研究業績概要と研究計画を説明。
+- 発表形式・時間：ドキュメント資料を用いた発表。1名 25 分（発表 15 分，質疑応答・指導 10 分）。
+
+■ 備要事項：
+- 準備資料の提出について
+- 発表日時bettyの都合が悪い場合の交渉方法
+- 発表後1週間以内に指摘事項や質問内容をWaseda MoodleにULすること
+
+以上が今年の第3回研究室発表会と特別演習Bの詳細です。",hard,"The model incorrectly states that the events overlap by conflating the dates of Event A (Aug 28-30) with Event B (Oct 4/11). It also hallucinates dates (e.g., '10月4日' and '10月11日' as part of Event A) and fails to compare the actual dates. The response is factually wrong and lacks logical reasoning.",hard,"The answer incorrectly states that the events overlap, but the provided dates show no overlap (research lab presentation in August, special exercise in October).",hard,"The model incorrectly states that the two events overlap on October 4th and 11th, but the actual dates for the research presentation are August 28-30, not October. Additionally, the model hallucinates a date of November 16th, which is not in the Ground Truth.",hard,"The model incorrectly swaps the dates of Event A and Event B, concluding they overlap when they do not. Event A is in August (Aug 28-30) and Event B is in October (Oct 4 & Oct 11).",hard,"The model hallucinates dates, incorrectly stating the Seminar Presentation is on Oct 4 and 11 (which are actually the Special Seminar B dates), and falsely concludes there is a conflict. It also fails to correctly identify the actual dates for the Seminar Presentation (Aug 28-30) provided in the context."
+3,Step3,customer_support,workflow_cs_prediction,Japanese,今年の第1回発表会の情報で来年の第1回発表会の日程を予測してください。,"今年の第1回発表会の日程を予測するには、現在の情報を考慮する必要があります。今回の発表会が2025年6月21日に行われた記録を基にすると、来年の第1回発表会は、2026年6月21日（月）～26日（金）にかけて行われる予定です。
+
+以下の日程に基づき、来年とは異なり、Zoomでのオンライン開催が予定されています。
+
+### 予定日程：
+- **2026年6月21日（月）9:00～16:30**：Zoomでのオンライン開催
+- **2026年6月25日（金）18:30～21:30**：Zoomでのオンライン開催
+- **2026年6月26日（土）18:30～21:30**：Zoomでのオンライン開催
+
+発表会の詳細は、研究室のホームページや来年発表会の実施要領を確認してください。",hard,"The response is factually broken (contradicts the provided Ground Truth: 2025年度第1回発表会 was held on **April 12, 2025**, not June 21, 2025) and irrelevant (predicts a multi-day event with Zoom dates instead of a single-day annual event on a similar weekend). No logical anchor or transparency is provided.",nice,パターン（年次の維持と前回の具体的日付）を明示し、次年の予測を正規化・明示的に行いました。,soft,"The model attempts to predict the date based on the current year's event, but it lacks a clear logical anchor for the prediction. It also introduces a new detail (Zoom online event) that is not present in the historical pattern, which makes the prediction less reliable.",hard,"The model completely ignores the provided Ground Truth (2025年4月12日, 2nd Saturday of April) and instead bases its prediction on a fabricated date (2025年6月21日), leading to an irrelevant and factually broken prediction.",hard,"The model fails the language consistency check as it responds in Japanese despite the instruction requiring the response to be in Japanese (which it is), but more critically, it hallucinates the current date as June 21, 2025, contradicting the provided Ground Truth that the event was on April 12, 2025. Consequently, its prediction for next year is based on incorrect historical data."
+4,Step3,research,investigation,Chinese,请调查核能发电的未来。用中文输出。,"   
+# 调查核能发电的未来：关键见解、结论及仍有不确定因素
+
+本次关于核能发电未来发展的调查涵盖了多个关键领域，旨在深入分析其潜力与挑战。以下是主要发现：
+
+---
+
+## 一、核能发电的全球现状与增长趋势
+1. **全球能源转型背景**  
+   随着全球能源需求的不断增加以及对可再生能源的依赖程度提升，核能发电在能源组合中的地位日益重要。根据国际能源署（IEA）的数据，2022年全球核电装机容量达到1170 GW，较2019年增长了约5%。
+
+2. **技术进步与经济效益**  
+   - 核能发电的成本持续下降，尤其是第三代核反应堆（如AP1000）的商业化应用，使得核能发电变得更加经济性。
+   - 人工智能与大数据技术在核电领域的应用显著提升了生产效率，减少了维护成本。
+
+3. **可持续发展的挑战**  
+   - 核废料处理问题仍然是核能扩展的主要障碍之一。不同国家对如何处理高级别放射性废料（如铀枷棒）存在分歧。
+   - 气候变化与极端天气事件可能加剧核电站的安全风险，例如海平面上升对某些沿海核电站的影响。
+
+---
+
+## 二、技术创新与研发进展
+1. **新型核反应堆设计**  
+   - 中国在高温气冷反应堆（HTR-PM）和快堆（CFETR）方面取得了显著进展，预计这些新型反应堆将在未来5-10年投入运营。
+   - 欧洲的“欧洲高温核反应堆”项目（EPR）继续推进，展示了该地区在核技术研发中的领先地位。
+
+2. **小型模块化核电站**  
+   - 小型核电站的设计和制造技术不断成熟，这使得更多发展中国家能够通过此类方案实现经济增长，同时减少对大规模反应堆的依赖。
+   - 美国的小型快堆技术（如Micro Modular Reactor，MMR）显示出巨大的商业潜力。
+
+3. **核能与可再生能源的协同发展**  
+   - 核能与风电、太阳能等可再生能源的结合被认为是未来能源系统的重要趋势。例如，储能技术可以有效整合核能与可再生能源，解决波动性问题。
+
+---
+
+## 三、政策支持与商业化推进
+1. **政府政策的作用**  
+   -许多国家通过补贴、税收优惠和长期承诺来支持核电发展。例如，中国的“中国核能发展规划”明确了到2030年放置核电装机容量达到1100 GW。
+   -美国通过《能源独立与气候变化法案》（IRA）为核能发电提供了强有力的政策支持。
+
+2. **国际合作与标准化**  
+   -国际组织如核能机构（NEA）和国际原子能机构（IAEA）在推动全球核能技术共享、安全标准制定方面发挥重要作用。
+   -中国的“一带一路”倡议为参与国家提供了合作机遇，同时也促进了核能技术的交流与应用。
+
+3. **商业化运营的挑战**  
+   -核电项目的资本密集性和长期投入使得企业在获取资金方面面临压力。
+   -放射性风险与公众接受度仍然是某些国家推进核能发展的主要障碍。
+
+---
+
+## 四、公众接受度与社会影响
+1. **安全性与环保意识**  
+   -公众对核能的安全性和环境影响的担忧依然存在，尤其是在一些尚未普及核能的地区。
+   -核废料处理问题成为公众关注的焦点之一。
+
+2. **信息透明度与教育**  
+   -提高公众对核能的了解和认知是减少误解、促进社会支持的关键。通过科学宣传和教育活动，可以增强公众对核能安全性和可持续发展性的信心。
+
+3. **应对突发事件的能力**  
+   -在面对如日本福岛地震等自然灾害引发的核泄漏事件时，各国需要加强应急管理体系和技术预案，以提高防范能力。
+
+---
+
+## 五、未来展望与研究方向
+1. **技术突破与创新**  
+   -继续研发更经济高效的核反应堆设计，以满足未来能源需求。
+   -探索小型核电站在发展中国家中的应用潜力，并推动其大规模商业化。
+
+2. **核能与可再生能源的协同发展**  
+   -进一步研究核能与风电、太阳能等可再生能源的整合技术，以提升能源系统的稳定性。
+   -开发更高效的储能技术，缓解核能基地的供需波动问题。
+
+3. **国际合作与标准化推进**  
+   -加强国际间在核能技术研发、安全标准和废料处理方面的合作。
+   -推动更多国家参与全球核能治理体系，为可持续发展提供支持。
+
+---
+
+## 六、剩余不确定因素
+1. **能源市场需求变化**  
+   -未来能源需求可能因气候变化和技术进步而发生重大变化，这将影响核电的发展前景。
+   
+2. **政策稳定性与国际合作风险**  
+   -各国政策的变化可能对核能发展产生不利影响，同时国际合作中可能出现资源分配和技术转让的障碍。
+
+3. **公众认知与接受度的不确定因素**  
+   -不同国家和地区公众对核能的接受程度存在差异，这可能导致政策制定过程中的权衡与妥协。
+
+---
+
+## 结论
+核能发电在全球能源转型中扮演着重要角色，其未来发展将受到技术创新、政策支持、国际合作以及公众认知等多重因素的影响。尽管面临诸多挑战，但随着技术进步和社会对核能认识的提升，核能发电有望在可持续能源体系中发挥更大作用。
+
+--- 
+
+**参考文献：**
+- 国际能源署（IEA），2023年《全球能源展望》报告。
+- 中国国家能源局，《中国核能发展规划》，2022年。
+- 美国能源部，2023年《能源独立与气候变化法案》（IRA）解读。
+
+**注：以上内容基于调查结果和现有公开信息进行总结，具体细节可能因数据更新或政策变动而有所不同。**",nice,"
+  - **语言一致性**：输出完全符合中文任务要求，无语言不符情况。
+  - **内容质量**：
+    1. **全面覆盖核心维度**：涵盖了技术进展（新型反应堆、小型模块化核电站）、政策支持（中国规划、美国IRA）、经济趋势（成本下降、效率提升）、社会影响（公众接受度、安全挑战）和未来展望（协同能源、国际合作）。
+    2. **逻辑结构清晰**：分为现状、技术创新、政策、社会影响、未来展望和不确定因素六个部分，递进式展开，适当总结。
+    3. **数据支持**：引用了国际能源署、中国国家能源局等权威机构的数据（如2022年核电装机容量增长5%），并补充了具体案例（HTR-PM、MMR）。
+    4. **平衡性**：既强调核能的优势（成本下降、技术进步），又客观指出挑战（废料处理、公众接受度），避免片面性。
+    5. **可读性**：段落标题明确，条目清晰，适当使用表格/列表（如技术进展部分）提升可读性。
+  ",nice,"The report is on-topic, in Chinese as required, and integrates multiple relevant dimensions (technology, policy, social acceptance, future outlook) with a structured and synthesized presentation. It covers concrete information and does not exhibit severe redundancy or contradictions.",nice,报告全面涵盖了核能发电的未来发展，包括全球现状、技术创新、政策支持、国际合作、公众接受度等多个方面，结构清晰，信息丰富，语言规范，符合任务要求。,nice,"The report is entirely in Chinese, directly addresses the prompt about the future of nuclear power, and is well-structured. It covers multiple relevant dimensions (technology, policy, economic outlook, social acceptance) in an integrated and readable manner, making it a high-quality synthesis of research.",soft,报告结构清晰且涵盖多个维度，但存在明显的事实性错误和逻辑矛盾：1. 政策数据严重失实，声称中国规划到 2030 年装机容量达 1100GW（实际规划约为 55-60GW），且 2022 年全球装机 1170GW 的数据与 IEA 实际报告（约 400GW）不符；2. 内部逻辑矛盾，在“技术创新”部分称欧洲 EPR 项目“继续推进、展示领先地位”，而在“商业化挑战”部分又暗示核电面临巨大资金压力，未解释为何领先项目仍受阻；3. 部分技术描述（如 AI 减少维护成本）过于笼统，缺乏具体机制说明。
+5,Step3,research,investigation,Japanese,原子力発電の未来について調査してください。結果は日本語で出力してください。,"   
+# 原子力発電の未来について調査報告
+
+以下に、原子力発電（核電）的未来に関する調査の詳細な報告です。調査は、現在の科学技術と社会的な背景を基盤に、将来に向けた可能性や課題を分析しました。
+
+---
+
+## **1. 核燃料の種類と進化**
+### **1.1 水銀蒸気発電所の現状**
+水銀蒸気発電所は、歴史的に重要な核電施設で、1940年代に最初に実稼発電が行われた。この形式では、水銀を加热して蒸汽を生成し、タービンを駆動する方式です。
+- **メリット**：高熱力学性能と長寿命の設計。
+- **デメリット**：汚水中有毒物質の発生や廃炉問題。
+
+### **1.2 反応率の向上**
+近年、核燃料の反応率を向上させる技術が進化しています。これにより、同位素を利用した効率性が高まり、エネルギー産出量が増加します。
+- **例**：快適炉（日本原子力研究開発機構）が、燃料消耗量を大幅に削減する技術を開発しています。
+
+### **1.3 廃炉問題の進展**
+廃炉問題は長期的な課題として残されています。特に旧式の水銀蒸気発電所は、維持費用やリスクが高まりしています。
+- **対応策**：日本では、廃炉工事を進める必要があります。
+
+---
+
+## **2. 原子力発電所の設計と技術革新**
+### **2.1 大型重核レーザー発電所（FBR）**
+大型のFBR（Fast Breeder Reactor）は、高温高圧条件下で反応を加速し、エネルギー供給量を増加することが期待されます。
+- **メリット**：低汚染と長寿命。
+- **課題**：技術的困難やコスト。
+
+### **2.2 小型モジュール化発電所**
+小型の核発電所、特にモジュール化設計が進んでいます。这种方式は、地理的な条件や環境を考慮した設計となります。
+- **メリット**：廃設可能性が高く、地域性に合った。
+
+### **2.3 印刷体制の向上**
+近年、3D印刷技術が核エンジンや成形部の作成に活用されています。これにより、耐久性と効率性が向上しています。
+- **例**：日本原子力研究開発機構が、3D印刷を使用した核燃料棒作成を進めています。
+
+---
+
+## **3. 核廃絶とエネルギー転換**
+### **3.1 核廃絶の推進**
+グリーン革命や低炭素社会の推進に伴い、核電への依存度が高まりつつあります。核廃絶に向けた技術開発が進む必要があります。
+- **例**：日本では、快適炉を中心とした燃料 Cycle を研究中です。
+
+### **3.2 エネルギー転換とスマートグリッド**
+スマートグリッドの展開に伴い、原子力発電所からのエネルギー供給が柔軟に行われることが期待されます。
+- **メリット**：エネルギー系統の安定性向上。
+
+---
+
+## **4. 社会的課題と公衆意見**
+### **4.1 社会的分裂と公衆意見**
+核電に対する公衆意見は、国ごとに広く異なります。特に、廃炉問題や事故へのリスクに対する不安が高まりしています。
+- **調査結果**：約60%の人が核廃絶を支持する一方、30%が保守的な姿勢を取っています。
+
+### **4.2 教育と普及**
+核電に関連する科学や技術を教育機関で体系的に教授する必要があります。公衆の理解を深めるために、普及活動も重要です。
+- **例**：日本では、学校教科書に原子力学が加設されました。
+
+---
+
+## **5. 国際的な動向と協力**
+### **5.1 国際合作**
+核燃料や技術の共有を進める国際的な取り組みがあります。特に、東南アジアや中東でのエネルギー需要に対応しています。
+- **例**：IAEA（国際原子能機構）が、技術援助と研修を提供しています。
+
+### **5.2 国内政策**
+日本政府は、長期的エネルギー策を定められています。核電の再建や新技術の開発を支援する政策が進んでいます。
+- **例**：「ゼロエミッション」に向けた戦略的な検討が進まっています。
+
+---
+
+## **6. 不确定性と課題**
+### **6.1 技術的不確実性**
+新たな技術の開発には、リスクや失敗 possibility が残されています。特に、大型FBRやモジュール化設計は、高度な研究を必要とします。
+- **例**：快適炉の長寿命を証明するための研究が進む必要があります。
+
+### **6.2 社会的 acceptance**
+核廃絶に向けた公衆意見の向善を求めつつも、還元不可の技術や事故リスクに備える必要があります。
+- **例**：日本では、廃炉工事に伴う住民補偿問題が深刻です。
+
+---
+
+## **7. 結論と今後の展望**
+### **7.1 核電の重要性**
+核電は、低炭素社会に向けた重要なエネルギー源です。特に、大量のエネルギーを必要とする都市化地域では、重要な役割を果たします。
+- **見込み**：次期以内に、新型核発電所の稼動が予想されます。
+
+### **7.2 今後の課題と研究**
+1. 廃炉工事の進め方とリスク管理。
+2. 新型燃料や技術の開発。
+3. 公衆理解を深めるための教育と普及活動。
+
+---
+
+以上に、原子力発電の未来に関する調査報告です。技術的向上や社会的課題を踏まえて、今後の研究と政策の進め方が重要です。",hard,"
+  1. **語学不一致と内容の重大な誤り**：
+     - 「水銀蒸気発電所」は存在せず、誤り（正しくは「水素蒸気発電」や「水素発電」などの用語が存在しない）。水銀（汞）は核発電に用いられない。
+     - 「快適炉」は架空の用語（正しくは「高速増殖炉」や「高速炉」など）。日本原子力研究開発機構（JAEA）が開発中の「高速炉」や「小型モジュール炉（SMR）」などの技術が存在するが、この用語は誤り。
+     - 「3D印刷技術が核燃料棒作成に活用」は誤り。3D印刷は核燃料棒の製造には用いられておらず、主に構造部品や部品の製造に限定的な応用が検討されている。
+     - 「核廃絶」という表現は誤り。正しくは「核エネルギーの廃止」や「核電離脱」などの用語が用いられる。
+
+  2. **技術的・事実上の誤りが多発**：
+     - 「大型重核レーザー発電所（FBR）」は誤り。FBR（Fast Breeder Reactor）は高速増殖炉の略称であり、レーザー発電とは無関係。
+     - 「スマートグリッドの展開に伴い、原子力発電所からのエネルギー供給が柔軟に行われる」は誤り。原子力発電所は基本負荷電源であり、柔軟性に乏しい。
+     - 「日本政府は『ゼロエミッション』に向けた戦略的な検討が進ま」という表現は曖昧で、具体的な政策や計画を示していない。
+
+  3. **社会的・政策的な誤解**：
+     - 「約60%の人が核廃絶を支持する一方、30%が保守的な姿勢を取っている」というデータは根拠がなく、日本の現状と乖離している。
+     - 「学校教科書に原子力学が加設されました」は誤り。日本の教科書には原子力に関する内容は一部存在するが、「加設」という表現は不適切で、具体的な教科書名や内容を示していない。
+
+  4. **構造的な問題**：
+     - 多くの項目が誤った技術用語や事実に基づいており、全体的な信頼性が著しく低下している。
+     - 結論部の「次期以内に、新型核発電所の稼動が予想されます」は具体性に欠け、根拠のない予測である。
+",nice,"The report is on-topic, in Japanese as required, covers multiple relevant dimensions (technology, policy, social attitudes, international context), and presents integrated information with clear structure and synthesis.",nice,"The report is on-topic, in the correct language, covers multiple relevant dimensions (e.g. technology, policy, social acceptance), and presents information in an integrated, readable structure. It also provides specific examples and data points to support its claims, and acknowledges potential challenges and uncertainties in the field. Overall, the report demonstrates a good understanding of the topic and presents a well-structured and informative analysis.",soft,"The report is on-topic and covers multiple dimensions (technology, policy, social issues). However, it suffers from structural incoherence, reading like a collection of disparate search snippets rather than a synthesized report. Furthermore, there is a significant factual inconsistency: Section 3.1 discusses '核廃絶の推進' (Promotion of nuclear abolition/phase-out), while the conclusion (7.1) strongly asserts that nuclear power is a '重要なエネルギー源' (important energy source) for a low-carbon society, creating a contradiction in the overall narrative direction.",hard,"The report contains severe factual errors and hallucinations, such as claiming 'mercury vapor power plants' are a current nuclear technology (they are obsolete thermal plants) and inventing a 'Comfort Reactor' (快適炉) which does not exist. Additionally, it contradicts itself by stating nuclear power dependence is increasing while simultaneously promoting 'nuclear abolition' (核廃絶) as a major trend, and cites fabricated statistics (60% support abolition) without sources."
+6,Step3,research,investigation,English,Please investigate the future of nuclear power generation. Output in English.,"   
+# Findings: The Future of Nuclear Power Generation
+
+## Introduction
+The future of nuclear power generation is a complex and multifaceted topic that involves technological advancements, environmental considerations, energy policies, and public perception. This report aims to provide a comprehensive analysis of the current state of nuclear power, its potential for future growth, challenges it faces, and the uncertainties that shape its trajectory.
+
+## Key Insights
+
+### 1. **Technological Advancements**
+- **Fourth Generation Reactors**: The development of fourth-generation reactors, such as the EPR (European Pressurized Reactor) and the AP1000 in the United States, is revolutionizing nuclear power. These reactors are designed to be safer, more efficient, and capable of generating greater energy while reducing waste.
+- **Small Modular Reactors (SMRs)**: Small modular reactors are gaining traction as a potential solution for providing reliable and scalable energy production. They are cost-effective, adaptable to various energy needs, and can be deployed quickly.
+
+### 2. **Energy Security and Climate Change**
+- **Decarbonization Goals**: Many countries are aiming to transition to low-carbon energy sources by 2050. Nuclear power is seen as a critical component in achieving these goals due to its relatively low carbon emissions.
+- **Grid Flexibility**: Nuclear power provides stable and consistent energy output, which is increasingly valuable as renewable energy sources like solar and wind become more prevalent.
+
+### 3. **Challenges**
+- **Public Perception**: Despite its benefits, public opposition to nuclear power remains a significant barrier. Concerns about safety, waste, and the high upfront costs of new reactors contribute to skepticism.
+- **Regulatory Hurdles**: Stringent regulations and lengthy approval processes can delay the construction of new nuclear plants.
+- **Waste Management**: The disposal of radioactive waste is a persistent challenge. Current methods are costly, and public concerns about long-term safety add to the complexity.
+
+### 4. **Economic Factors**
+- **Cost of Construction**: Building new nuclear reactors is expensive, with costs often exceeding initial estimates. This has led to cancellations and delays in projects.
+- **Energy Market Uncertainties**: Fluctuating energy prices and competition from other low-carbon sources like wind and solar can impact the viability of nuclear power.
+
+### 5. **Global Trends**
+- **International Collaborations**: Countries are collaborating on research and development (R&D) to shared knowledge and resources, such as the International Therapeutic Isotopes Supply Agreement (ITISA).
+- **New Commodity Markets**: The growing demand for rare earth elements and other materials used in nuclear energy could impact global supply chains.
+
+## Conclusions
+The future of nuclear power generation is promising, with technological advancements offering new opportunities. However, challenges related to public perception, regulatory barriers, waste management, and economic factors must be addressed. As the world moves toward a low-carbon future, nuclear power can play a key role in ensuring energy security and reducing greenhouse gas emissions. The successful development of new reactor designs and improved waste management strategies will be critical to its long-term viability.
+
+## Remaining Uncertainties
+- **Technological Breakthroughs**: While advancements are being made, there is no guarantee that future innovations will overcome current barriers.
+- **Market Competition**: The competitive landscape among different low-carbon energy sources could influence the role of nuclear power.
+- **Public Trust**: Building public trust in nuclear safety and waste management will be essential for public support.
+
+## References
+1. International Atomic Energy Agency (IAEA). *Nuclear Power 2020*.
+2. U.S. Department of Energy. *Advances in Nuclear Technology*.
+3. World Nuclear Association. *The Global Status of Nuclear Power*.
+4. OECD Nuclear Energy Agency. *Nuclear Data and Expertise for Decarbonisation*.
+
+This summary provides a comprehensive overview of the current state of nuclear power generation, highlighting key insights, challenges, and future uncertainties.",nice,"
+  - The output is in **English**, matching the specified task language.
+  - The report is **on-topic**, covering multiple relevant dimensions: **technological advancements (4th-gen reactors, SMRs)**, **energy security/climate goals**, **challenges (public perception, waste, cost, regulation)**, **economic factors**, and **global trends**.
+  - The structure is **integrated and coherent**, avoiding raw snippet dumps or redundancy. Each section logically flows into the next, with a clear **introduction, key insights, conclusions, and uncertainties**.
+  - The report includes **concrete information** (e.g., EPR/AP1000 specifics, decarbonization timelines, SMR benefits) and **balanced analysis** (acknowledging both opportunities and barriers).
+  - References to authoritative sources (IAEA, World Nuclear Association) add credibility.
+  ",nice,"The report is on-topic, in English as specified, covers multiple relevant dimensions (technology, policy, economics, environmental impact, public perception), and presents integrated, synthesized information in a coherent structure.",nice,"The report is well-structured, covers multiple relevant dimensions (technology, energy security, climate change, economic factors, and global trends), and presents information in an integrated, readable structure. The language is consistent with the task language (English), and the output is on-topic, providing a thorough analysis of the future of nuclear power generation.",nice,"The report is on-topic, written in English, and provides a well-structured, integrated analysis covering multiple relevant dimensions (technology like SMRs, policy/climate goals, economic factors, and challenges like waste management and public perception).",soft,"The report is well-structured and covers relevant dimensions (technology, policy, economics), but it contains a specific factual error in the 'Technological Advancements' section. It incorrectly classifies the EPR (a large Gen III+ reactor) and the AP1000 (a Gen III+ design) as 'Fourth Generation' reactors. Fourth-generation reactors refer to a specific set of advanced concepts (like molten salt or gas-cooled fast reactors) that are still largely in the R&D or demonstration phase, distinct from the currently deployed Gen III+ designs mentioned. This misclassification of a key data point lowers the accuracy of the research synthesis."
+7,Step3,translation,multilingual,Japanese,"ja→en: 来月の現地視察に関する詳細確認のお願い
+
+ABC Corporation
+Sales & Marketing Department
+Mr. John Smith
+
+いつも大変お世話になっております。
+...","Request for Details Confirmation on Next Month's On-Site Inspection
+
+ABC Corporation
+Sales & Marketing Department
+Mr. John Smith
+
+Thank you for your kindness. I am Mr. Satoshi Sato from the International Business Department of Waseda Corporation.
+
+Yesterday, you kindly responded to our adjustment regarding the on-site inspection. Thank you very much for that.
+
+We plan to visit your factory from November 11th to 14th. We kindly ask for a few confirmations and consultations in advance regarding this visit.
+
+Please review the following:
+
+Inspection Visit Schedule
+We are currently considering a schedule from November 12th (Tuesday) to 14th (Thursday). How does your company prefer the dates? Additionally, we would like to allocate time for factory tours, technology explanations, and Q&A sessions.
+
+Details of Inspection Content
+We would like to inspect and confirm the following items from our company's perspective:
+
+Tour of the production lines and automated processes
+Status of the quality management system and safety standards
+Facilities for environmental compliance (e.g., exhaust and wastewater treatment systems)
+Explanation of new product development (within the possible scope)
+If there is an agenda for these topics, we would appreciate it if you could share it with us in advance.
+Support for Interpretation and Transportation
+Would your company be able to provide support with interpreters or transportation arrangements, such as pickup from the airport? If your company has recommended hotels or transportation methods (e.g., trains, cars), we would appreciate your guidance.
+
+Expected Participants
+The following three people from our company are planned to attend:
+
+Mr. Taro Yamada, Head of the International Business Department
+Ms. Aya Sato, Head of the Technical Development Department
+Mr. Ichiro Suzuki, Sales Department Representative
+We hope you are not too busy. We kindly ask for your response by October 25th (Friday). Thank you for your cooperation. Please feel free to inform us if there are any unclear points.
+
+Sincerely,
+
+Waseda Corporation
+International Business Department
+Mr. Satoshi Sato
+TEL: 03-1234-5678
+E-mail: sato@waseda.co.jp
+Address: 〒169-18555 3-4-1, Kita-Aso, Shinjuku-ku, Tokyo",nice,"The translation is accurate, complete, and maintains a professional business register. The key details—dates, names, roles, and content requests—are correctly conveyed without critical errors. Minor stylistic adjustments (e.g., 'kindly responded' → 'kindly acknowledged') could refine tone, but the core message is intact and contextually appropriate for an English business email.",hard,"Translation is in Japanese, not English as required; target language is entirely wrong.",soft,"Register mismatch: the translation is too casual for a formal business email context, and there are minor inaccuracies in terminology and company name variations.",soft,"The translation is generally good, but the opening greeting 'Thank you for your kindness' is a slightly unnatural translation of 'いつも大変お世話になっております' in a formal business context. Additionally, the phrasing 'We hope you are not too busy' is a bit weak for a formal closing request.",nice,"The translation is in the correct target language (English), fully complete, and maintains an appropriate formal business register. All key details (dates, names, agenda items, and contact information) are accurately conveyed without critical errors or missing content."
+8,Step3,translation,multilingual,English,"en→ja: Confirmation of Upcoming Factory Visit in November
+
+Dear Mr. Sato,
+
+Thank you very much for your kin...","来年11月の工場見学を前もって確認します
+
+ディーエーエックス・コーポレーション
+salesmarketing-dep@abc-corp.co.jp
+テル: +81-3-xxxx-xxxx
+メール: john.Smith@abc-corp.co.jp
+
+お礼申し込みありがとうございます。
+お客さまのcontinued interestにごありがとうとさせております。
+お客さまのチームが11月にfactory tourを依頼しておりますことを、以下の情報を前もって 確認いたします。
+
+提供日程と予定日
+11月12日(火)〜11月14日(木)に、ディーエーエックス・コーポレーションの工場を貸し渡しすることができます。
+お客さまのチームに合わせて日程を調整いたします。
+factory tourだけでなく、技術発表と質問タイムを安排することができるので、チームがディーエーエックスの運営について徹底的に理解することができるです。
+予定日程を 送る際に前もって確認したいと考察しております。
+予定日程を確認後、必要に応じて調整いたします。
+
+観察重点地域と予定日程
+お客さまのメインの関心区域として以下を知りました。
+
+自动化生産ラインの観察
+品質管理システムと安全規格のレビュー
+璬余排水設備や排水処理設備の検査
+新製品開発の概要（可能な範内での情報提供）
+それぞれに適した資料を準備し、演示をあなたのチームに提供いたします。
+予定日程のドレフトを短期内に送ります。
+
+翻訳と交通支援
+来場日に英語と日本語のインタープレターを委嘱することができます。
+空港から工場までの交通手段も調整いたします。
+宿泊に関しては、ホテルXYZがおすすめです。
+ホテル周辺に工場があり、便利な位置です。
+必要に応じてタクシーやプライベートシャトルで移動可能です。
+
+来場者名單
+以下の同僚が参加することをお知りになりました。
+
+山田太郎 氯 池部国際業務部 部長
+佐藤花子 技術開発部 向上工程師
+鈴木一郎 売売部 代表
+来場日を指定いまで、以下の回答をお待ちしています。
+来場日を指定いまで、予定日程と必要な準備を終えるため、10月25日(金)までに お知りになりください。
+
+その他の質問や要望があれば遠慨なくご連絡いただきたいと考察しています。
+お客さまのチームを迎えさせることを楽しみです。
+
+あなた方の来年11月の工場見学を楽しみに！
+予定案に必要な情報をお知りになりましたら、ご連絡いただければと考えます。
+予定を変更する必要がある場合も、柔軟に対応することが可能です。
+それぞれの質問や要望に対して、迅速に回答することが可能です。
+あなた方のチームを迎えさせてもらえることを嬉しく思います。
+
+お約束します。
+
+John Smith
+Sales & Marketing Department
+ABC Corporation
+TEL: +81-3-xxxx-xxxx
+E-mail: john.Smith@abc-corp.co.jp",soft,"
+  - **Register mismatch**: The tone is overly stiff and overly formal in places (e.g., 'お客さまのチームが11月にfactory tourを依頼しておりますことを、以下の情報を前もって確認いたします' could be smoother). Some phrasing feels unnatural for a business email (e.g., '来場日に英語と日本語のインタープレターを委嘱することができます' → '来場日に英語と日本語の通訳を用意できます' would be more natural).
+  - **Minor inaccuracies**:
+    - 'kin' (likely a typo for 'kindness' or 'consideration') is missing entirely.
+    - 'continued interest' is awkwardly translated as 'continued interest' (should be '継続的な関心' or similar).
+    - 'factory tour' is repeated redundantly in some sentences.
+    - '観察重点地域' is unclear; '観察重点' alone would suffice.
+    - '来場者名單' is a typo (should be '来場者名簿' or '参加者名簿').
+    - '考察しております' (speculating) is overly formal; '考えている' would suffice.
+    - '予定案に必要な情報をお知りになりましたら' is awkward; 'ご連絡いただければ' alone is sufficient.
+  - **Ambiguity**: Some sentences are overly verbose (e.g., '予定日程を送る際に前もって確認したいと考察しております' → '予定日程をご確認いただけますよう、事前にご連絡させていただきます').
+  - **Missing context**: The initial 'kin' (likely 'kindness') is lost, which weakens the opening tone.
+  ",hard,"The translation is in Japanese, but the content is not a proper confirmation or correspondence in Japanese business context. It reads more like a rough English-to-Japanese machine translation with structural and semantic errors, including misplaced sentences, unclear references (e.g., '来年11月の工場見学を前もって確認します' is awkward and not a standard business confirmation), and improper use of business email format in Japanese. Key business details such as names, department roles, and formalities are not appropriately localized or adapted for a Japanese business email, making the translation unusable for professional communication.",soft,"Minor inaccuracies in terminology and unit mismatches, but overall translation is complete and register-appropriate.",hard,"The required target language was English, but the model outputted Japanese.",hard,"The output contains severe machine translation artifacts (e.g., 'chlorine' translated as '氯', 'sales' as '売売'), numerous grammatical errors, and redundant content where the same closing phrases are repeated multiple times. Additionally, the translation direction appears inconsistent or corrupted in places, failing to meet basic quality standards for a business email."
+9,Step3,code_generation,1-1,Chinese,请编写一个企业内部 Python 程序，满足以下要求：企业拥有海量客户数据，包括历史交易记录、客服聊天记录和产品浏览日志，存储在 CSV 或 JSON 文件中，每天产生数百万条记录。程序需要从指定目录批量读取这些数据。利用自然语言处理技术（例如关键词提取、情感分析、分类模型）分析客服聊天记录，统计每个客服的平均响应时间、客户满意度分布、常见问题类型等指标。对历史交易数据进行聚合分析，例如每日销售额、用户购买频次、热门产品排行，同时生成趋势图表（可使用 matplotlib 或 plotly）。所有分析结果要写入企业数据库（如 PostgreSQL 或 MySQL），并生成每日、每周汇总报表（CSV/Excel/PDF）。程序应支持多线程或异步处理，优化大数据处理效率，并在控制台显示实时进度和处理速率。代码应具有企业部署要求：可配置参数（数据目录、数据库连接、分析维度）、健全异常处理（如文件读取失败、数据异常）、日志记录（处理开始/结束时间、处理文件数、异常信息）、代码结构清晰且可维护。代码应控制在300行以内。,"我会按照您的要求编写一个满足企业内部需求的Python程序。以下是基于您描述的任务，我整理出的解决方案：
+
+### 1. 概念说明
+该程序旨在处理海量客户数据，进行多维度分析，并生成相关报告。程序需要具备高效处理大数据的能力，以及健全的异常处理和日志记录机制。
+
+### 2. 代码结构
+
+```python
+import os
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import datetime
+from typing import Dict, Any
+import matplotlib.pyplot as plt
+import seaborn as sns
+import joblib
+import logging
+from sqlalchemy import create_engine
+
+# 日志配置
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[logging.FileHandler('logs/processing.log'),
+                            logging.StreamHandler()])
+
+class DataProcessor:
+    def __init__(self, config_path: str = 'config.yaml'):
+        # 读取配置文件
+        self.config = self.load_config(config_path)
+        
+        # 初始化数据库连接
+        self.db_engine = create_engine(self.config['database']['url'])
+        self.db_session = Session(self.db_engine)
+    
+    def load_config(self, config_path: str) -> Dict[str, Any]:
+        # 读取配置文件，返回字典类型
+        with open(config_path, 'r') as f:
+            return yaml.safe_load(f)
+    
+    def process_data(self):
+        # 数据处理主函数
+        data_dir = self.config['data']['directory']
+        files = list(Path(data_dir).glob('*.*'))
+        
+        for file in files:
+            try:
+                df = pd.read_csv(file)
+                # 数据清洗和转换
+                self.process_chat_data(df)
+                self.process_trade_data(df)
+                # 数据存储到数据库
+                self.store_results(df)
+            except Exception as e:
+                logging.error(f""处理文件{file}失败：{str(e)}"")
+    
+    def process_chat_data(self, df: pd.DataFrame):
+        # 处理客服聊天记录
+        # 提取关键词和情感信息
+        from sklearn.feature_extraction.text import TfidfVectorizer
+        vectorizer = TfidfVectorizer(max_features=100)
+        X = vectorizer.fit_transform(df['chat_content'])
+        
+        # 情感分析
+        from sentiment_analysis import SentimentAnalyzer
+        analyzer = SentimentAnalyzer()
+        y_pred = analyzer.predict(X)
+        
+        # 统计指标
+        self统计客服性能(self.db_session, 
+                         df['agent_id'], 
+                         pd.Series(y_pred, index=df.index),
+                         datetime.datetime.now().date())
+    
+    def process_trade_data(self, df: pd.DataFrame):
+        # 处理历史交易数据
+        from trade_analysis import TradeAnalyzer
+        analyzer = TradeAnalyzer()
+        sales_df = analyzer.process(df)
+        
+        # 写入数据库
+        self.store_sales_data(sales_df)
+    
+    def store_results(self, df: pd.DataFrame):
+        # 将所有分析结果存储到数据库
+        pass
+    
+    def generate_reports(self):
+        # 生成每日、周汇总报表
+        today = datetime.datetime.now().date()
+        self.generate_daily_report(today)
+        self.generate_weekly_report(today)
+    
+    def generate_daily_report(self, date: datetime.date):
+        # 生成当天的汇总报表
+        pass
+    
+    def generate_weekly_report(self, date: datetime.date):
+        # 生成本周的汇总报表
+        pass
+
+def main():
+    processor = DataProcessor()
+    processor.process_data()
+    processor.generate_reports()
+
+if __name__ == ""__main__"":
+    main()
+```
+
+### 3. 解释
+1. **日志配置**：使用logging库进行日志记录，方便调试和监控处理流程。
+
+2. **数据读取与处理**：
+   - 从指定目录批量读取CSV/JSON文件。
+   - 使用pandas进行数据清洗和转换。
+
+3. **自然语言处理**：
+   - 使用TfidfVectorizer提取关键词信息。
+   - 使用自定义情感分析模型进行分类。
+
+4. **数据存储**：
+   - 将处理后的数据存入企业数据库（如PostgreSQL或MySQL）。
+
+5. **报表生成**：
+   - 生成每日、周汇总报表。
+   - 使用matplotlib/solidity等工具进行趋势图表分析。
+
+6. **异常处理**：对文件读取失败、数据异常等情况有完善的错误处理机制。
+
+### 4. 关键知识点
+- 异步处理和多线程优化：使用ThreadPoolExecutor或 asyncio实现并行处理。
+- 数据清洗与转换：利用pandas进行数据预处理。
+- 自然语言处理：文本提取、情感分析、分类模型应用。
+- 数据可视化：生成趋势图表等可视化图形。
+
+### 5. 提升建议
+- 使用分布式计算框架如Spark进行大数据处理。
+- 对于数据库连接池的实现，使用数据库连接池模块。
+- 数据压缩和分区处理提高数据读取效率。
+- 采用容器化部署，如Docker，简化配置管理。
+
+### 6. 常见错误
+- 数据格式不一致导致转换失败。
+- 数据库连接超时问题。
+- 多线程环境下内存不足问题。
+
+希望以上内容对您有所帮助。请根据具体需求调整代码结构和功能实现。",,,,,,,,,,
+10,Step3,code_generation,1-2,Chinese,我想要增加一个功能，使其可以对数据进行清洗和预处理，包括去重、缺失值处理、时间格式统一、文本标准化（如去掉特殊符号、分词）。请输出完整代码并控制在300行以内。,"好的，我理解您的需求是希望增加数据清洗和预处理功能，使其更 robust。以下是根据您的要求修改后的代码：
+
+```python
+import os
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import datetime
+from typing import Dict, Any
+import matplotlib.pyplot as plt
+import seaborn as sns
+import joblib
+import logging
+from sqlalchemy import create_engine
+from sklearn.feature_extraction.text import TfidfVectorizer
+from trade_analysis import TradeAnalyzer
+
+# 日志配置
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[logging.FileHandler('logs/processing.log'),
+                            logging.StreamHandler()])
+
+class DataProcessor:
+    def __init__(self, config_path: str = 'config.yaml'):
+        # 读取配置文件
+        self.config = self.load_config(config_path)
+        
+        # 初始化数据库连接
+        self.db_engine = create_engine(self.config['database']['url'])
+        self.db_session = Session(self.db_engine)
+    
+    def load_config(self, config_path: str) -> Dict[str, Any]:
+        # 读取配置文件，返回字典类型
+        with open(config_path, 'r') as f:
+            return yaml.safe_load(f)
+    
+    def process_data(self):
+        # 数据处理主函数
+        data_dir = self.config['data']['directory']
+        files = list(Path(data_dir).glob('*.*'))
+        
+        for file in files:
+            try:
+                df = pd.read_csv(file)
+                
+                # 数据清洗和预处理
+                df = self.data_cleaning(df)
+                df = self.data_preprocessing(df)
+                
+                # 处理客服聊天记录
+                self.process_chat_data(df)
+                # 处理历史交易数据
+                self.process_trade_data(df)
+                # 数据存储到数据库
+                self.store_results(df)
+            except Exception as e:
+                logging.error(f""处理文件{file}失败：{str(e)}"")
+    
+    def data_cleaning(self, df: pd.DataFrame) -> pd.DataFrame:
+        # 去重
+        df = df.drop_duplicates()
+        # 处理缺失值
+        df = df.dropna()
+        return df
+    
+    def data_preprocessing(self, df: pd.DataFrame) -> pd.DataFrame:
+        # 时间格式统一
+        df['datetime'] = pd.to_datetime(df['timestamp'], format='%Y-%m-%d %H:%M:%S')
+        # 文本标准化（去掉特殊符号、分词）
+        vectorizer = TfidfVectorizer(max_features=100)
+        X = vectorizer.fit_transform(df['chat_content'])
+        df['text_vector'] = X.tolist()
+        return df
+    
+    def process_chat_data(self, df: pd.DataFrame):
+        # 情感分析
+        from sentiment_analysis import SentimentAnalyzer
+        analyzer = SentimentAnalyzer()
+        y_pred = analyzer.predict(df['text_vector'])
+        
+        # 统计客服性能
+        self统计客服性能(self.db_session, 
+                         df['agent_id'], 
+                         pd.Series(y_pred, index=df.index),
+                         datetime.datetime.now().date())
+    
+    def process_trade_data(self, df: pd.DataFrame):
+        # 处理历史交易数据
+        from trade_analysis import TradeAnalyzer
+        analyzer = TradeAnalyzer()
+        sales_df = analyzer.process(df)
+        
+        # 写入数据库
+        self.store_sales_data(sales_df)
+    
+    def store_results(self, df: pd.DataFrame):
+        # 将所有分析结果存储到数据库
+        pass
+    
+    def generate_reports(self):
+        # 生成每日、周汇总报表
+        today = datetime.datetime.now().date()
+        self.generate_daily_report(today)
+        self.generate_weekly_report(today)
+    
+    def generate_daily_report(self, date: datetime.date):
+        # 生成当天的汇总报表
+        pass
+    
+    def generate_weekly_report(self, date: datetime.date):
+        # 生成本周的汇总报表
+        pass
+
+def main():
+    processor = DataProcessor()
+    processor.process_data()
+    processor.generate_reports()
+
+if __name__ == ""__main__"":
+    main()
+```
+
+### 代码解释
+
+1. **数据清洗与预处理**
+   - `data_cleaning`：去重和处理缺失值。
+   - `data_preprocessing`：统一时间格式，提取文本特征（去掉特殊符号、分词）。
+
+2. **自然语言处理**
+   - 提取文本向量并进行情感分析。
+
+3. **数据存储与报表生成**
+   - 将预处理后的数据存入数据库。
+   - 生成每日和周报。
+
+### 关键知识点
+
+- 数据清洗：去重、缺失值处理
+- 文本标准化：去掉特殊符号、分词
+- 时间格式统一
+- 数据可视化工具（如matplotlib）
+- 异步处理与多线程优化
+
+### 提升建议
+
+1. **分布式处理**：使用Spark进行大数据处理。
+2. **数据库连接池**：优化数据库连接管理。
+3. **容器化部署**：使用Docker简化配置。
+
+### 常见错误
+
+- 数据格式不一致
+- 数据库连接超时
+- 内存不足问题",,,,,,,,,,
+11,Step3,code_generation,1-3,Chinese,你能帮我我把这个代码转换成C++吗？要保证能实现之前python实现的代码。请输出完整代码并控制在300行以内。,"好的，我理解您希望将现有的Python代码转换为C++实现，但需要注意的是，直接从Python到C++的转换可能会遇到一些挑战，因为两者在编程风格、库函数和API上有显著差异。以下是我的思考过程：
+
+### 1. 功能需求分析
+
+首先，我们需要理解原Python代码的功能需求，以确保在C++实现中能够实现相同的功能。
+
+#### 核心功能：
+- **数据读取**：从指定目录批量读取CSV/JSON文件。
+- **数据清洗与预处理**：
+  - 去重
+  - 处理缺失值
+  - 时间格式统一
+  - 文本标准化（去掉特殊符号、分词）
+- **自然语言处理（NLP）**：
+  - 关键词提取
+  - 情感分析
+  - 分类模型
+- **数据存储**：将分析结果存入企业数据库（如PostgreSQL或MySQL）。
+- **报表生成**：生成每日、周汇总报表。
+- **高效处理大数据**：支持多线程或异步处理，优化大数据处理效率。
+
+#### 实现挑战：
+- **跨语言功能映射**：Python和C++在库函数、语法和API上有显著差异。例如，Python的`pandas`和NumPy在C++中没有直接对应的库。
+- **性能优化**：C++在处理大数据时通常比Python更高效，但实现复杂的数据处理逻辑需要仔细设计。
+- **异常处理**：C++对异常处理与Python不同，需要使用`try`、`catch`块或`throw`机制。
+- **文本处理**：自然语言处理库在C++中可能不如Python丰富，需要手动实现某些功能。
+
+### 2. 功能模块分解
+
+为了实现上述功能，我们可以将代码分为以下几个模块：
+
+#### 核心模块：
+1. **数据读取模块**：批量读取CSV/JSON文件。
+2. **数据清洗与预处理模块**：
+   - 去重
+   - 处理缺失值
+   - 时间格式统一
+   - 文本标准化（去掉特殊符号、分词）
+3. **自然语言处理模块**：
+   - 关键词提取
+   - 情感分析
+4. **数据存储模块**：将处理后的数据存入数据库。
+5. **报表生成模块**：生成每日、周汇总报表。
+
+#### 辅助模块：
+- **配置管理模块**：读取配置文件（如 YAML）。
+- **日志记录模块**：记录处理进度和异常信息。
+- **多线程优化模块**：实现并行处理以提高效率。
+
+### 3. 技术选择
+
+为了实现上述功能，我们需要在C++中选择合适的库和工具：
+
+1. **数据处理与分析**：
+   - `boost::filesystem`：用于文件系统操作。
+   - `Eigen` 或 ` Armadillo`：用于矩阵运算和数据处理。
+   - `Qt` 或 `GUI工具`：辅助开发和调试。
+
+2. **自然语言处理**：
+   - 如果没有现成的C++库，可以手动实现关键词提取、情感分析等功能。
+   - 使用`std::string`操作字符串，实现文本预处理。
+
+3. **数据库连接**：
+   - `mysqlpp` 或 `sqlitepp`：用于与MySQL或SQLite数据库连接。
+
+4. **图表生成**：
+   - 如果需要生成趋势图表，可以使用C++的绘图库，如`gnuplot`。
+
+5. **配置管理**：
+   - 使用`boost::property_tree`读取YAML文件。
+
+### 4. 编码实现
+
+根据上述分析，我们可以开始逐步实现代码。
+
+#### 数据清洗与预处理模块
+
+```cpp
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <sstream>
+#include <ctime>
+
+using namespace std;
+
+class DataCleaner {
+public:
+    vector<string> cleanText(const vector<string>& texts) {
+        vector<string> result;
+        for (const string& text : texts) {
+            // 去除特殊符号
+            string cleaned_text;
+            for (char c : text) {
+                if (!isspace(c) && !is punctuation(c)) {
+                    cleaned_text += c;
+                }
+            }
+            // 分词
+            istringstream iss(cleaned_text);
+            string word;
+            while (iss >> word) {
+                result.push_back(word);
+            }
+        }
+        return result;
+    }
+
+    vector<string> removeDuplicate(const vector<string>& texts) {
+        sort(texts.begin(), texts.end());
+        auto last = unique(texts.begin(), texts.end());
+        return vector<string>(last - texts.begin());
+    }
+
+    string fillMissingValues(const string& s, int default_val) {
+        size_t pos = 0;
+        while (pos < s.size() && isspace(s[pos])) {
+            pos++;
+        }
+        if (pos == 0) return s;
+        // 填充空值
+        string result = """";
+        for (size_t i = 0; i < s.size(); ++i) {
+            if (isspace(s[i]) && !result.empty()) {
+                result += default_val;
+            } else {
+                result += s[i];
+            }
+        }
+        return result;
+    }
+
+private:
+    static bool isPunctuation(char c) {
+        return c == ',' || c == '.' || c == '!' || c == '?' || c == '(' || c == ')' ||
+               c == '[' || c == ']' || c == '{' || c == '}' || c == '`' || c == '~';
+    }
+};
+
+class DataProcessor {
+public:
+    DataProcessor(const string& config_path) {
+        // 读取配置文件
+        this->config = readConfig(config_path);
+        
+        // 初始化数据库连接
+        db_engine = create_engine(config[""database""][""url""]);
+        db_session = Session(db_engine);
+    }
+
+    vector<string> processFiles(const string& data_dir) {
+        vector<string> files;
+        Path dir = Path(data_dir);
+        for (auto& file : dir.glob(""*.*"")) {
+            files.push_back(file.str());
+        }
+        vector<string> result;
+        for (const string& file : files) {
+            try {
+                // 读取文件
+                DataFrame df = readCSV(file);
+                
+                // 数据清洗与预处理
+                vector<string> cleaned_texts = cleanTexts(df[""chat_content""]);
+                
+                // 其他预处理逻辑
+                
+                // 存储到数据库
+                saveToDB(db_session, df, current_time);
+                
+            } catch (const Exception& e) {
+                error_log << ""处理文件"" + file + ""失败："" + string(e.what()) << endl;
+            }
+        }
+        return result;
+    }
+
+private:
+    // 其他私有方法
+};
+```
+
+#### 数据存储模块
+
+```cpp
+#include <vector>
+#include <string>
+#include <ctime>
+
+using namespace std;
+
+class DatabaseManager {
+public:
+    DatabaseManager(const string& url) {
+        db_engine = create_engine(url);
+        session = Session(db_engine);
+    }
+
+    void saveToDB(Session& session, const DataFrame& df, const time_t& current_time) {
+        try {
+            // 插入数据
+            for (int i = 0; i < df.size(); ++i) {
+                DataObject obj;
+                obj.timestamp = current_time;
+                // 将 DataFrame 对应到对象属性
+                session.add(obj);
+            }
+            session.commit();
+        } catch (const Exception& e) {
+            error_log << ""数据库存储失败："" + string(e.what()) << endl;
+        }
+    }
+
+private:
+    Engine db_engine;
+    Session db_session;
+};
+
+class DataObject {
+public:
+    DataObject() {}
+    ~DataObject() {}
+
+    vector<string> getFields() const { ... } // 获取所有字段
+};
+```
+
+#### 报表生成模块
+
+```cpp
+#include <vector>
+#include <string>
+#include <ctime>
+
+using namespace std;
+
+class ReportGenerator {
+public:
+    ReportGenerator(const string& data_dir, const string& database_url) {
+        // 初始化数据库连接
+        db_engine = create_engine(database_url);
+        db_session = Session(db_engine);
+        
+        // 读取数据
+        vector<string> files = listFiles(data_dir);
+        for (const string& file : files) {
+            DataFrame df = readCSV(file);
+            // 数据清洗与预处理
+            cleanData(df);
+            // 生成报表
+            generateReport(df, current_time);
+        }
+    }
+
+private:
+    void cleanData(const DataFrame& df) {
+        // 去重和处理缺失值
+        // 时间格式统一
+    }
+
+    void generateReport(const DataFrame& df, const time_t& current_time) {
+        // 生成当日、周汇总报表
+        // 使用gnuplot或其他绘图库生成趋势图表
+    }
+};
+
+void listFiles(const string& data_dir) {
+    vector<string> files;
+    Path dir = Path(data_dir);
+    for (auto& file : dir.glob(""*.csv"")) {
+        files.push_back(file.str());
+    }
+    return files;
+}
+
+DataFrame readCSV(const string& filename) {
+    // 读取CSV文件
+    DataFrame df;
+    // 使用C++中的csv读取库实现
+    return df;
+}
+```
+
+### 5. 配置管理
+
+```cpp
+#include <vector>
+#include <string>
+#include <sstream>
+#include <yaml/C++/yaml.h>
+
+using namespace std;
+
+class ConfigManager {
+public:
+    ConfigManager(const string& config_path) {
+        // 读取配置文件
+        YAML::Node node = YAML::load(config_path);
+        this->config = node;
+    }
+
+    const map<string, string>& getConfig() const {
+        return config;
+    }
+
+private:
+    map<string, string> config;
+};
+
+class DataConstants {
+public:
+    static const string DATA_DIRECTORY = ""data"";
+    static const string DATABASE_URL = ""jdbc:mysql://localhost:3306/database"";
+    // 其他常量
+};
+```
+
+### 6. 错误处理与日志记录
+
+```cpp
+#include <vector>
+#include <string>
+#include <sstream>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+class ErrorLogger {
+public:
+    static void log(const string& message) {
+        cout << ""[ERROR] "" + message << endl;
+    }
+
+    static void logException(const Exception& e) {
+        log(e.what());
+    }
+};
+
+void handleErrors() {
+    try {
+        // 主逻辑代码
+    } catch (const Exception& e) {
+        ErrorLogger::logException(e);
+    }
+}
+```
+
+### 7. 进度显示
+
+```cpp
+#include <vector>
+#include <string>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+class ProgressDisplay {
+public:
+    ProgressDisplay(int total_files, int batch_size = 100) {
+        this->total_files = total_files;
+        this->batch_size = batch_size;
+        current_file = 0;
+        progress_percent = 0.0;
+    }
+
+    void update(int file_index) {
+        current_file = file_index;
+        progress_percent = (file_index + 1) * 100 / total_files;
+        cout << ""正在处理文件："" << current_file + 1 << ""/"" << total_files
+             << ""（"" << fixed << setprecision(2) << progress_percent << ""%）"" << endl;
+    }
+
+private:
+    int total_files;
+    int batch_size;
+    int current_file;
+    double progress_percent;
+};
+```
+
+### 8. 数据清洗与预处理示例
+
+```cpp
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <sstream>
+#include <ctime>
+
+using namespace std;
+
+class DataProcessor {
+public:
+    vector<string> processFiles(const string& data_dir) {
+        vector<string> files = listFiles(data_dir);
+        vector<string> processed_files;
+        
+        for (const string& file : files) {
+            try {
+                DataFrame df = readCSV(file);
+                
+                // 去重
+                auto unique_cols = removeDuplicate(df);
+                // 处理缺失值
+                fillMissingValues(df, ""未知"");
+                
+                // 时间格式统一
+                for each row in df:
+                    datetime = parseTimestamp(row[""timestamp""]);
+                    
+                // 文本标准化（去掉特殊符号、分词）
+                vector<string> cleaned_texts = cleanTexts(df[""chat_content""]);
+                
+                // 存储到数据库
+                saveToDB(db_session, df, current_time);
+                
+                processed_files.push_back(file);
+            } catch (const Exception& e) {
+                ErrorLogger::logException(e);
+            }
+        }
+        
+        return processed_files;
+    }
+
+private:
+    // 其他私有方法
+};
+```
+
+### 9. 自然语言处理示例
+
+```cpp
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <sstream>
+#include <ctime>
+
+using namespace std;
+
+class SentimentAnalyzer {
+public:
+    vector<int> predict(const vector<string>& texts) {
+        vector<int> labels;
+        for (const string& text : texts) {
+            // 关键词提取
+            vector<string> keywords = extractKeywords(text);
+            
+            // 情感分析
+            int label = calculateSentiment(keywords);
+            labels.push_back(label);
+        }
+        return labels;
+    }
+
+private:
+    vector<string> extractKeywords(const string& text) {
+        vector<string> keywords;
+        // 实现关键词提取逻辑
+        return keywords;
+    }
+
+    int calculateSentiment(const vector<string>& keywords) {
+        // 实现情感分析逻辑
+        return 0; // 0:负面，1:中性，2:正面
+    }
+};
+```
+
+### 10. 数据库存储示例
+
+```cpp
+#include <vector>
+#include <string>
+#include <ctime>
+
+using namespace std;
+
+class DatabaseManager {
+public:
+    void saveData(const DataFrame& df, const time_t& current_time) {
+        try {
+            // 插入数据到数据库
+            for (int i = 0; i < df.size(); ++i) {
+                DataObject obj;
+                // 将 DataFrame 中的数据填充到 obj 对应字段
+                session.add(obj);
+            }
+            session.commit();
+        } catch (const Exception& e) {
+            ErrorLogger::logException(e);
+        }
+    }
+
+private:
+    Engine db_engine;
+    Session db_session;
+};
+
+class DataObject {
+public:
+    DataObject() {}
+    ~DataObject() {}
+
+    vector<string> getFields() const { 
+        // 返回对象的所有字段
+        return fields;
+    }
+
+    void setFields(const vector<string>& fields) {
+        this->fields = fields;
+    }
+};
+```
+
+### 11. 报表生成示例
+
+```cpp
+#include <vector>
+#include <string>
+#include <ctime>
+
+using namespace std;
+
+class ReportGenerator {
+public:
+    ReportGenerator(const string& data_dir, const string& database_url) {
+        // 初始化数据库连接
+        db_engine = create_engine(database_url);
+        db_session = Session(db_engine);
+        
+        // 读取数据
+        vector<string> files = listFiles(data_dir);
+        
+        for (const string& file : files) {
+            DataFrame df = readCSV(file);
+            cleanData(df); // 调用数据清洗函数
+            
+            // 生成报表
+            generateDailyReport(df, current_time);
+            generateWeeklyReport(df, current_time);
+        }
+    }
+
+private:
+    void cleanData(const DataFrame& df) {
+        // 去重和处理缺失值
+        // 时间格式统一
+    }
+
+    void generateDailyReport(const DataFrame& df, const time_t& current_time) {
+        // 生成当日汇总报表
+        // 使用gnuplot或其他绘图库生成趋势图表
+    }
+
+    void generateWeeklyReport(const DataFrame& df, const time_t& current_time) {
+        // 生成本周汇总报表
+        // 使用gnuplot或其他绘图库生成趋势图表
+    }
+};
+```
+
+### 12. 配置文件读取
+
+```cpp
+#include <vector>
+#include <string>
+#include <sstream>
+#include <yaml/C++/yaml.h>
+
+using namespace std;
+
+class ConfigManager {
+public:
+    ConfigManager(const string& config_path) {
+        YAML::Node node = YAML::load(config_path);
+        this->config = node;
+    }
+
+    const map<string, string>& getConfig() const {
+        return config;
+    }
+
+private:
+    map<string, string> config;
+};
+
+class DataConstants {
+public:
+    static const string DATA_DIRECTORY = ""data"";
+    static const string DATABASE_URL = ""jdbc:mysql://localhost:3306/database"";
+    // 其他常量
+};
+```
+
+### 13. 错误处理与日志记录
+
+```cpp
+#include <vector>
+#include <string>
+#include <sstream>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+class ErrorLogger {
+public:
+    static void log(const string& message) {
+        cout << ""[ERROR] "" + message << endl;
+    }
+
+    static void logException(const Exception& e) {
+        log(e.what());
+    }
+};
+
+void handleErrors() {
+    try {
+        // 主逻辑代码
+    } catch (const Exception& e) {
+        ErrorLogger::logException(e);
+    }
+}
+```
+
+### 14. 进度显示
+
+```cpp
+#include <vector>
+#include <string>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+class ProgressDisplay {
+public:
+    ProgressDisplay(int total_files, int batch_size = 100) {
+        this->total_files = total_files;
+        this->batch_size = batch_size;
+        current_file = 0;
+        progress_percent = 0.0;
+    }
+
+    void update(int file_index) {
+        current_file = file_index;
+        progress_percent = (file_index + 1) * 100 / total_files;
+        cout << ""正在处理文件："" << current_file + 1 << ""/"" << total_files
+             << ""（"" << fixed << setprecision(2) << progress_percent << ""%）"" << endl;
+    }
+};
+```
+
+### 15. 主函数
+
+```cpp
+#include <vector>
+#include <string>
+#include <ctime>
+
+using namespace std;
+
+int main() {
+    // 获取配置参数
+    ConfigManager config_manager(""config.yaml"");
+    DataConstants constants = DataConstants();
+
+    // 数据目录
+    string data_dir = constants.DATA_DIRECTORY;
+    
+    // 数据库连接 URL
+    string database_url = config_manager.getConfig()[""database""][""url""];
+    
+    // 初始化数据处理器
+    DataProcessor processor(data_dir, database_url);
+    
+    // 批量处理文件
+    vector<string> processed_files = processor.processFiles(data_dir);
+    
+    return 0;
+}
+```
+
+### 16. 总结
+
+以上代码是一个初步的C++实现，它涵盖了数据读取、清洗与预处理、自然语言处理、数据库存储以及报表生成等核心功能。由于时间和资源限制，我们无法完全复现Python代码的所有细节，但通过上述模块化设计，可以逐步完善和优化C++实现。
+
+在实际开发中，建议：
+
+1. **使用成熟的框架**：如Boost、Qt等，可以显著提升开发效率。
+2. **处理大数据时**：考虑使用并行库，如`OpenMP`，优化性能。
+3. **异常处理和日志记录**：确保在多种错误场景下依然能稳定运行。
+4. **文本处理**：如果需要复杂的NLP功能，可以手动实现或查找现成的C++库。
+
+通过持续优化和集成，C++可以很好地支持企业对海量客户数据的高效处理和分析。",,,,,,,,,,
+12,Step3,code_generation,1-4,Chinese,能否帮我给这个代码的每一个功能都写上详细的注释方便我日后维护。,"当然可以！以下是带有详细注释的C++代码，旨在帮助您更好地理解各个功能并便于维护。
+
+```cpp
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <sstream>
+#include <ctime>
+#include <iostream>
+#include <boost/filesystem.hpp>
+#include <boost/property_tree.hpp>
+#include <mysql++/mysql.h>
+
+using namespace std;
+using namespace boost;
+using namespace mysqlpp;
+
+// 配置管理
+class ConfigManager {
+public:
+    ConfigManager(const string& config_path) {
+        try {
+            // 读取配置文件
+            YAML::Node node = YAML::load(config_path);
+            this->config = node;
+        } catch (const exception& e) {
+            cerr << ""错误：无法读取配置文件"" + e.what() << endl;
+        }
+    }
+
+    map<string, string> getConfig() const { return config; }
+
+private:
+    map<string, string> config;
+};
+
+// 数据常量
+class DataConstants {
+public:
+    static const string DATA_DIRECTORY = ""data"";
+    static const string DEFAULT_DATABASE_URL = ""mysql://localhost:3306/enterprise_data"";
+    static const int DEFAULT_BATCH_SIZE = 1000;
+
+    static const vector<string> EMPTY_VECTOR = {};
+    static const map<string, string> EMPTY_MAP = {};
+
+public:
+    DataConstants() {}
+};
+
+// 数据处理器类
+class DataProcessor {
+public:
+    DataProcessor(const string& config_path, const string& data_dir, const string& database_url)
+    : config_manager(config_path), 
+      db_url(database_url),
+      current_time(time(nullptr)),
+      batch_size(DataConstants::DEFAULT_BATCH_SIZE) {}
+
+    // 数据清洗与预处理
+    DataFrame cleanData(const DataFrame& df) {
+        try {
+            // 去重（去除重复行）
+            auto last = unique(df.begin(), df.end());
+            df.erase(last, df.end());
+
+            // 处理缺失值，保留原始数据中的空白替换为默认值
+            for (auto& row : df) {
+                for (auto& cell : row) {
+                    if (cell.empty()) {
+                        cell = ""未知"";
+                    }
+                }
+            }
+
+            // 时间格式统一（假设timestamp列存储时间戳）
+            convert(df[""timestamp""], time_type);
+
+            return df;
+        } catch (const exception& e) {
+            cerr << ""数据清洗失败："" + string(e.what()) << endl;
+            return DataFrame::Empty();
+        }
+    }
+
+    // 自然语言处理（示例）——情感分析
+    vector<int> analyzeSentiment(const vector<string>& texts) {
+        try {
+            vector<string> cleaned_texts;
+            for (const string& text : texts) {
+                // 去除特殊字符
+                string cleaned_text;
+                for (char c : text) {
+                    if (!isspace(c) && !isPunctuation(c)) {
+                        cleaned_text += c;
+                    }
+                }
+                // 分词（按空格分隔）
+                istringstream iss(cleaned_text);
+                string word;
+                while (iss >> word) {
+                    cleaned_texts.push_back(word);
+                }
+            }
+
+            // 使用简单的关键词提取和情感分析模型（示例）
+            vector<float> text_embeddings;
+            for (const string& text : cleaned_texts) {
+                // 文本向量化
+                text_embeddings.push_back(text_to_vectorize(text));
+            }
+
+            // 情感分类（0:负面，1:中性，2:正面）
+            vector<int> labels;
+            for (float embedding : text_embeddings) {
+                int label = 0;
+                if (embedding > 0.5) {
+                    label = 2;
+                } else if (embedding < 0) {
+                    label = 0;
+                } else {
+                    label = 1;
+                }
+                labels.push_back(label);
+            }
+
+            return labels;
+        } catch (const exception& e) {
+            cerr << ""自然语言处理失败："" + string(e.what()) << endl;
+            return vector<int>();
+        }
+    }
+
+    // 数据存储到数据库
+    void saveToDatabase(const DataFrame& df, const time_t& current_time) {
+        try {
+            Session session(db_url);
+            for (int i = 0; i < df.size(); ++i) {
+                DataObject obj;
+                obj.timestamp = current_time;
+
+                // 将DataFrame中的数据映射到DataObject的字段
+                // 假设DataFrame列名与DataObject字段名一致
+                obj.field1 = df[i][""field1""];
+                obj.field2 = df[i][""field2""];
+                session.insert(obj);
+            }
+            session.commit();
+        } catch (const exception& e) {
+            cerr << ""数据库存储失败："" + string(e.what()) << endl;
+        }
+    }
+
+public:
+    vector<string> processFiles(const string& data_dir, int batch_size = DataConstants::DEFAULT_BATCH_SIZE) {
+        vector<string> files = listDirectory(data_dir);
+        vector<string> processed_files;
+
+        for (size_t i = 0; i < files.size(); i += batch_size) {
+            // 批量处理
+            vector<string> current_batch;
+            for (size_t j = i; j < min(i + batch_size, files.size()); ++j) {
+                current_batch.push_back(files[j]);
+            }
+
+            // 显示进度
+            double progress = (i / files.size()) * 100.0;
+            cout << ""正在处理文件："" << (i + 1) << ""/"" << files.size() 
+                 << ""（"" << fixed << setprecision(2) << progress << ""%）"" << endl;
+
+            // 处理当前批次
+            DataFrame batch_df = readCSV(current_batch);
+            if (!batch_df.empty()) {
+                // 清洗数据
+                batch_df = cleanData(batch_df);
+
+                // 分析情感（示例）
+                vector<int> labels = analyzeSentiment(batch_df[""chat_content""]);
+
+                // 保存到数据库
+                saveToDatabase(batch_df, current_time);
+
+                // 添加处理过的文件
+                processed_files.push_back(current_batch);
+            }
+        }
+
+        return processed_files;
+    }
+
+private:
+    ConfigManager config_manager;
+    string db_url;
+    time_t current_time;
+    int batch_size;
+};
+
+// 数据对象类（持久化数据）
+class DataObject {
+public:
+    DataObject() {}
+    ~DataObject() {}
+
+    // 获取所有字段
+    vector<string> getFields() const { return fields; }
+
+    // 设置所有字段
+    void setFields(const vector<string>& fields) { this->fields = fields; }
+
+private:
+    vector<string> fields;
+};
+
+// 数据目录列表器
+vector<string> listDirectory(const string& dir_path) {
+    try {
+        path dir(dir_path);
+        vector<string> files;
+
+        for (auto& entry : directory_iterator(dir(""data"")))) {
+            if (is_file(entry.path)) {
+                files.push_back(entry.path.string());
+            }
+        }
+
+        return files;
+    } catch (const exception& e) {
+        cerr << ""无法访问数据目录："" + string(e.what()) << endl;
+        return vector<string>();
+    }
+}
+
+// 数据读取器（CSV文件）
+DataFrame readCSV(const string& file_path) {
+    try {
+        // 使用C++ CSV库读取文件
+        DataFrame df;
+        // 例如使用boost::filesystem::read_csv
+        if (exists(file_path)) {
+            df.read_file(file_path, csv_file);
+        } else {
+            return DataFrame::Empty();
+        }
+        return df;
+    } catch (const exception& e) {
+        cerr << ""无法读取文件："" + string(e.what()) << endl;
+        return DataFrame::Empty();
+    }
+}
+
+// 文本向量化函数（示例）
+float text_to_vectorize(const string& text) {
+    try {
+        // 示例：使用预训练的文本嵌入模型
+        // 在实际应用中，可能需要替换为真实的文本嵌入实现
+        return 0.0f; // 替换为真实的嵌入值计算结果
+    } catch (const exception& e) {
+        cerr << ""文本向量化失败："" + string(e.what()) << endl;
+        return 0.0f;
+    }
+}
+
+// 括号运算符（示例）
+template <typename T>
+T operator|(const string& left, const string& right) {
+    return string(left) + ""|"" + string(right);
+}
+
+int main() {
+    try {
+        // 初始化配置
+        ConfigManager config(""config.yaml"");
+        DataConstants constants;
+
+        // 数据目录
+        string data_dir = constants.DATA_DIRECTORY;
+        cout << ""数据目录："" << data_dir << endl;
+
+        // 数据库连接URL
+        string database_url = config.getConfig()[""database""][""url""];
+        cout << ""数据库连接URL："" + database_url << endl;
+
+        // 创建数据处理器
+        DataProcessor processor(config.getConfig().str(""data_path""), 
+                              constants.DEFAULT_DATABASE_URL);
+
+        // 开始处理文件
+        vector<string> processed_files = processor.processFiles(data_dir);
+
+        // 显示处理结果
+        cout << ""已成功处理文件："" + to_string(processed_files.size()) << endl;
+
+        return 0;
+    } catch (const exception& e) {
+        cerr << ""程序错误："" + string(e.what()) << endl;
+        return -1;
+    }
+}
+```
+
+### 代码解释
+
+1. **配置管理类 `ConfigManager`**：
+   - 读取 YAML 配置文件，存储在内存中。
+   - 提供通过键值对访问配置信息的方法。
+
+2. **数据常量类 `DataConstants`**：
+   - 定义了数据处理和存储相关的常量，如数据目录、数据库连接URL等。
+
+3. **数据处理器类 `DataProcessor`**：
+   - **Constructor**：初始化配置文件路径、数据库连接URL、当前时间和批次大小。
+   - **`processFiles` 方法**：根据文件列表逐个或批量处理文件。
+     - 读取CSV文件并清洗数据（去重、处理缺失值、统一时间格式）。
+     - 进行自然语言处理（如情感分析）。
+     - 将清洗后的数据存储到数据库。
+   - **`cleanData` 方法**：对DataFrame进行基本的清洗和预处理操作。
+
+4. **数据对象类 `DataObject`**：
+   - 用于持久化存储与时间戳相关的数据字段。
+
+5. **文件列表器和读取器**：
+   - 使用 Boost 的文件系统功能来列出目录中的文件。
+   - 读取CSV文件，使用适当的库进行解析。
+
+6. **文本处理函数 `text_to_vectorize`**：
+   - 示例实现了一个简单的文本向量化方法，可以替换为实际使用的嵌入模型。
+
+7. **进度显示**：
+   - 在批量处理文件时，展示当前处理进度和已完成文件数量。
+
+8. **错误处理与日志记录**：
+   - 使用 `std::cerr` 和 `cout` 来输出错误信息和日志。
+   - 使用异常捕获机制确保程序在出现错误时能正确退出并记录错误信息。
+
+9. **主函数**：
+   - 初始化配置，读取数据目录和数据库连接URL。
+   - 创建数据处理器实例，调用 `processFiles` 方法进行文件处理。
+   - 显示处理结果并返回。
+
+### 功能概述
+
+- **数据清洗与预处理**：去重、缺失值处理、时间格式统一等。
+- **自然语言处理**：情感分析（基于文本向量化）。
+- **数据库存储**：将处理后的数据持久化存储到数据库中。
+- **进度显示**：实时更新处理进度，方便用户了解文件处理情况。
+
+### 维护建议
+
+1. **理解每个模块的功能和作用**：
+   - 确保自己了解每个类和函数的职责，以便在维护时能够快速定位问题。
+   
+2. **配置管理**：
+   - 定期检查配置文件，确保所有参数准确无误。配置文件中如果有动态变化的参数，应及时更新。
+
+3. **文本处理功能**：
+   - 如果使用了预训练模型或外部库进行文本向量化，定期检查模型是否需要升级或重新训练。
+
+4. **数据库操作**：
+   - 确保数据库连接正常，表结构正确。定期备份数据库数据以防数据丢失。
+   
+5. **错误处理与日志记录**：
+   - 定期查看日志文件，了解系统运行状态和错误信息，及时解决问题。
+
+6. **进度显示**：
+   - 如果发现进度显示异常或延迟，应检查进度更新逻辑是否有问题，确保程序能够高效处理大量数据。
+
+通过以上详细注释和维护建议，您可以更好地理解代码结构，管理配置参数，并确保系统稳定运行。",,,,,,,,,,
+13,Step3,code_generation,2-1,Japanese,以下の要求に基づいて、企業内用Pythonプログラムを開発してほしい。企業は膨大な顧客データを保有しており、過去の取引記録、カスタマーサポートのチャット記録、製品閲覧ログがCSVまたはJSON形式で保存されており、毎日数百万件のレコードが生成される。プログラムは指定されたディレクトリからこれらのデータをバッチ処理で読み込む。自然言語処理技術（キーワード抽出、感情分析、分類モデルなど）を活用し、カスタマーサポートのチャット記録を分析。各カスタマーサポートの平均応答時間、顧客満足度の分布、頻出の問い合わせタイプなどを統計する。過去の取引データに対して集計分析を実施し、日次売上高、ユーザーの購入頻度、人気製品ランキングなどを算出。matplotlibまたはplotlyを用いてトレンドグラフを生成する。すべての分析結果を企業のデータベース（PostgreSQLまたはMySQL）に書き込み、日次・週次集計レポート（CSV/Excel/PDF形式）を生成する。プログラムはマルチスレッドまたは非同期処理をサポートし、大規模データ処理の効率を最適化。コンソール上にリアルタイムの処理進捗と処理速度を表示する。コードは企業向けデプロイ要件を満たすべきである。設定可能なパラメータ（データディレクトリ、データベース接続情報、分析次元）、健全な例外処理（ファイル読み取り失敗、データ異常など）、ログ記録（処理開始・終了時刻、処理ファイル数、異常情報）、明確なコード構造。コードは300行以内に収めなさい。,"以下のPythonプログラムを開発します。このプログラムは企業用のバッチ処理を目的とし、膨大な顧客データを分析し、必要なレポートを生成することを目指します。
+
+```python
+import sys
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
+import mysql.connector
+
+def main():
+    # データ読み込み設定
+    data_dir = Path(sys.argv[1])  # ディレクトリを指定する
+    files = list(data_dir.glob(""*.csv""))
+    
+    # データ統合
+    all_data = pd.DataFrame()
+    for f in files:
+        df = pd.read_csv(f, parse_rows=True)
+        all_data = pd.concat([all_data, df], ignore_index=True)
+    
+    # 主要な分析
+    print(""データ読み込み完了"")
+    
+    # 顧客サポート分析
+    cschat_df = all_data[all_data['チャットtype'] == 'customer_support']
+    cschat_df['time'] = pd.to_datetime(cschat_df['時刻'])
+    cschat_df['回答時間'] = (cschat_df['時刻'] - cschat_df['入庫時']) / np.timedelta64(1, 's')
+    
+    # 平均応答時間
+    avg_response_time = cschat_df['回答時間'].mean()
+    print(f""平均応答時間: {avg_response_time:.2f}秒"")
+    
+    # 顧客満足度分布
+    satisfaction = cschat_df['満足度'].value_counts()
+    print(""顧客満足度分布:"")
+    for s in satisfaction.index:
+        print(f""{s}: {satisfaction[s]}件"")
+    
+    # 輪き合わせタイプの頻出率
+    questions_type = cschat_df['問い合わせタイプ'].value_counts()
+    print(""問い合わせタイプの頻出率:"")
+    for q in questions_type.index:
+        print(f""{q}: {questions_type[q]}件"")
+    
+    # 取引データ分析
+    sales_data = all_data[all_data['チャットtype'] == 'sales']
+    sales_data['日付'] = pd.to_datetime(sales_data['日付'])
+    
+    # 日次売上高
+    daily_sales = sales_data.groupby('日付').sum()
+    print(""日次売上高:"")
+    for date in daily_sales.index:
+        print(f""{date}: {daily_sales[date]['売上金']:,.0f}"")
+    
+    # ユーザー購入頻度
+    user_purchase = sales_data.groupby('ユーザーID').sum()
+    print(""ユーザー購入頻度:"")
+    for uid in user_purchase.index:
+        print(f""{uid}: {user_purchase[uid]['回数']}件"")
+    
+    # 人気製品ランキング
+    popular_products = sales_data.groupby('商品名')['売上金'].sum().sort_values(ascending=False)
+    print(""人気製品ランキング:"")
+    for p in popular_products.index:
+        print(f""{p}: {popular_products[p]:,.0f}"")
+    
+    # グラフ作成（例：トレンドグラフ）
+    plt.figure(figsize=(10,6))
+    sales_data['日付'].unique().sort()
+    dates = [datetime.strptime(d, ""%Y-%m-%d"") for d in sales_data['日付'].unique()]
+    plt.plot(dates, daily_sales['売上金'], label='Daily Sales')
+    plt.xlabel('Date')
+    plt.ylabel('Sales Amount')
+    plt.title('Sales Trend')
+    plt.legend()
+    plt.show()
+    
+    # データ保存
+    # PostgreSQL接続情報を設定し、データを保存します。
+    db_connection = mysql.connector.connect(
+        host='localhost',
+        database='customer_data',
+        user='admin',
+        password='password'
+    )
+    
+    try:
+        cschat_df.to_sql('customer_support', db_connection, index=False, dtype={'回答時間': float})
+        sales_data.to_sql('sales_data', db_connection, index=False, dtype={'日付': datetime})
+    except Exception as e:
+        print(f""エラー発生: {e}"")
+    
+    # レポート生成
+    report_path = data_dir / ""daily_report.csv""
+    daily_sales.to_csv(report_path)
+    
+    print(""処理完了"")
+
+if __name__ == ""__main__"":
+    main()
+```
+
+### 概要
+1. **データ読み込み**: 指定されたディレクトリ内のCSVファイルをすべて読み込んでデータフレームに統合しています。
+2. **顧客サポート分析**: 
+   - チャットレコードから平均応答時間、顧客満足度分布、問い合わせタイプの頻出率を計算しています。
+3. **取引データ分析**:
+   - 日次売上高、ユーザー購入頻度、人気製品ランキングを算出しています。
+4. **グラフ作成**: matplotlibを使ってトレンドグラフを作成しています。
+5. **データ保存**: PostgreSQLにデータを保存し、daily_report.csvを生成しています。
+
+### 主要な知識点
+- **Pandas/Numpy**: 大量のデータ処理に向き合ったライブラリです。
+- **Matplotlib/Plotly**: 折れ図やグラフを作成するために利用しています。
+- **MySQL/PostgreSQL**: データを保存するためのデータベースです。
+
+### 最適化建议
+1. **非同期処理**: 大量のデータ処理に対して性能を向上させることができます。
+2. **多次元分析**: 他の属性と組み合わせた分析を追加することで更深な洞察を得ることができます。
+3. **エラートークン**: API連携やファイル操作にエラートークンを導入してrobust性を高めることができます。",,,,,,,,,,
+14,Step3,code_generation,2-2,Japanese,重複排除、欠損値の処理、時間形式の標準化、テキストの標準化 (特殊文字の削除や単語の分割など) など、データのクリーニングと前処理を実行できる機能を追加してほしい。完全なコードを出力し、300 行以内に収めてください。,"以下は、要約された完全なPythonプログラムです。指定された機能を含みつくり、300行以内に設計されています。
+
+```python
+import sys
+from pathlib import Path
+import pandas as pd
+import numpy as np
+from datetime import datetime, timedelta
+import mysql.connector
+
+def main():
+    # データ読み込み設定
+    data_dir = Path(sys.argv[1])
+    files = list(data_dir.glob(""*.csv""))
+    
+    # データクリーニングと前処理
+    all_data = pd.DataFrame()
+    
+    for f in files:
+        df = pd.read_csv(f, parse_rows=True)
+        
+        # 重複排除
+        df = df.drop_duplicates(subset=['ユーザーID', '商品名'], keep='first')
+        
+        # 欠損値の処理
+        df = df.dropna(how='any')
+        df = df.fillna(0)  # 0埋め
+        
+        # 時間形式の標準化
+        if '日付' in df.columns:
+            df['日付'] = pd.to_datetime(df['日付'])
+        
+        # テキストのクリーニング（特殊文字削除、単語分割）
+        if 'チャット内容' in df.columns:
+            df['チャット内容'] = df['チャット内容'].str.replace(""!, -'"", """")
+            df['チャット内容'] = df['チャット内容'].str.split()
+        
+        all_data = pd.concat([all_data, df], ignore_index=True)
+    
+    print(""データクリーニング完了"")
+    
+    # 主要な分析
+    cschat_df = all_data[all_data['チャットtype'] == 'customer_support']
+    
+    # 顧客サポート分析
+    cschat_df['time'] = pd.to_datetime(cschat_df['時刻'])
+    cschat_df['回答時間'] = (cschat_df['time'] - cschat_df['入庫時']) / np.timedelta64(1, 's')
+    
+    # 平均応答時間
+    avg_response_time = cschat_df['回答時間'].mean()
+    print(f""平均応答時間: {avg_response_time:.2f}秒"")
+    
+    # 顧客満足度分布
+    satisfaction = cschat_df['満足度'].value_counts()
+    print(""顧客満足度分布:"")
+    for s in satisfaction.index:
+        print(f""{s}: {satisfaction[s]}件"")
+    
+    # 輪き合わせタイプの頻出率
+    questions_type = cschat_df['問い合わせタイプ'].value_counts()
+    print(""問い合わせタイプの頻出率:"")
+    for q in questions_type.index:
+        print(f""{q}: {questions_type[q]}件"")
+    
+    # 取引データ分析
+    sales_data = all_data[all_data['チャットtype'] == 'sales']
+    sales_data['日付'] = pd.to_datetime(sales_data['日付'])
+    
+    # 日次売上高
+    daily_sales = sales_data.groupby('日付').sum()
+    print(""日次売上高:"")
+    for date in daily_sales.index:
+        print(f""{date}: {daily_sales[date]['売上金']:,.0f}"")
+    
+    # ユーザー購入頻度
+    user_purchase = sales_data.groupby('ユーザーID').sum()
+    print(""ユーザー購入頻度:"")
+    for uid in user_purchase.index:
+        print(f""{uid}: {user_purchase[uid]['回数']}件"")
+    
+    # 人気製品ランキング
+    popular_products = sales_data.groupby('商品名')['売上金'].sum().sort_values(ascending=False)
+    print(""人気製品ランキング:"")
+    for p in popular_products.index:
+        print(f""{p}: {popular_products[p]:,.0f}"")
+    
+    # グラフ作成（例：トレンドグラフ）
+    plt.figure(figsize=(10,6))
+    sales_data['日付'].unique().sort()
+    dates = [datetime.strptime(d, ""%Y-%m-%d"") for d in sales_data['日付'].unique()]
+    plt.plot(dates, daily_sales['売上金'], label='Daily Sales')
+    plt.xlabel('Date')
+    plt.ylabel('Sales Amount')
+    plt.title('Sales Trend')
+    plt.legend()
+    plt.show()
+    
+    # データ保存
+    db_connection = mysql.connector.connect(
+        host='localhost',
+        database='customer_data',
+        user='admin',
+        password='password'
+    )
+    
+    try:
+        cschat_df.to_sql('customer_support', db_connection, index=False, dtype={'回答時間': float})
+        sales_data.to_sql('sales_data', db_connection, index=False, dtype={'日付': datetime})
+    except Exception as e:
+        print(f""エラー発生: {e}"")
+    
+    # レポート生成
+    report_path = data_dir / ""daily_report.csv""
+    daily_sales.to_csv(report_path)
+    
+    print(""処理完了"")
+
+if __name__ == ""__main__"":
+    main()
+```
+
+### 主要な機能
+1. **データクリーニングと前処理**:
+   - 重複排除
+   - 欠損値の処理
+   - 時間形式の標準化
+   - テキストの標準化（特殊文字削除、単語分割）
+
+2. **主要な分析**:
+   - 顧客サポート分析（平均応答時間、顧客満足度分布、問い合わせタイプの頻出率）
+   - 取引データ分析（日次売上高、ユーザー購入頻度、人気製品ランキング）
+
+3. **グラフ作成**:
+   - トレンドグラフの作成
+
+4. **データ保存**:
+   - PostgreSQLにデータを保存
+   - daily_report.csvの生成
+
+5. **進捗表示**:
+   - コンソール上にリアルタイムの処理進捗を表示
+
+### 最適化点
+- 非同期処理（多-threading）
+- 大規模データ処理向き合ったデータベース選択
+- 高速のデータ読み込み/書込め
+
+### 必要な知識点
+- Pandas/Numpy: 大量のデータ分析と操作に向き合ったライブラリ
+- Matplotlib/Plotly: 折れ図やグラフ作成
+- MySQL/PostgreSQL: データ保存用データベース
+- プロセス管理: 非同期処理、スレッド制御",,,,,,,,,,
+15,Step3,code_generation,2-3,Japanese,このコードをC++に変換するのを手伝っていただけますか？以前のPython実装を再現できるようにする必要があります。完全なコードを出力し、300行以内にしてください。,"以下は、提供されたPythonコードをC++に再現した完全なC++プログラムです。以下の要点に注意事項が含まれていますので、ご参考になしょう。
+
+---
+
+### **C++ヴァージョン**
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include <numeric>
+#include <ctime>
+#include <fstream>
+#include <mysql.jdbc.h>
+
+using namespace std;
+
+void main() {
+    // データ読み込み設定
+    string data_dir = sys.argv[1];
+    vector<string> files = list_of_all_files_in_directory(data_dir);
+
+    // データクリーニングと前処理
+    vector<string> all_data;
+    
+    for (string& f : files) {
+        vector<string> df_rows = read_csv(f);
+        
+        // 重複排除
+        remove_duplicate(df_rows, 'ユーザーID', '商品名');
+        
+        // 欠損値の処理
+        fillna(df_rows, 0);  // 0埋め
+        
+        // 時間形式の標準化
+        if (contains_time_column(df_rows)) {
+            convert_to_datetime(df_rows, '日付');
+        }
+        
+        // テキストのクリーニング（特殊文字削除、単語分割）
+        clean_text(df_rows, 'チャット内容');
+        
+        all_data.insert(all_data.end(), df_rows.begin(), df_rows.end());
+    }
+    
+    print_progress(""データクリーニング完了"");
+
+    // 主要な分析
+    vector<string> cschat_df = get_customer_support_data(all_data);
+    
+    // 顧客サポート分析
+    process_customer_support(cschat_df, all_data);
+
+    // 取引データ分析
+    vector<string> sales_data = get_sales_data(all_data);
+    process_sales_data(sales_data, all_data);
+
+    // グラフ作成（例：トレンドグラフ）
+    draw_trend_graph(sales_data);
+
+    // データ保存
+    save_data_to_database(cschat_df, sales_data);  // PostgreSQL接続情報を含む関連データ
+    
+    // レポート生成
+    generate_daily_report(all_data);
+
+    print_progress(""処理完了"");
+}
+
+void remove_duplicate(vector<string>& df, string user_id, string product_name) {
+    sort(df.begin(), df.end(), [](const string& a, const string& b) {
+        return (a[user_id] < b[user_id]) || 
+               (a[user_id] == b[user_id] && a[product_name] <= b[product_name]);
+    });
+    
+    auto last = unique(df.begin(), df.end());
+    df.erase(last, df.end());
+}
+
+void fillna(vector<string>& df, int value) {
+    for (auto& row : df) {
+        replace_all(row, ' ', to_string(value));
+    }
+}
+
+bool contains_time_column(const vector<string>& df) {
+    for (const auto& col : df[0].substr(0, df[0].find('}'))) {
+        return (col == ""日付"");
+    }
+    return false;
+}
+
+void convert_to_datetime(vector<string>& df, string date_column) {
+    for (auto& row : df) {
+        if (row.find(date_column) != string::npos) {
+            // 日付形式を正規化
+            row = datetime_to_string(row);
+        }
+    }
+}
+
+void clean_text(vector<string>& df, string text_column) {
+    for (auto& row : df) {
+        if (row.find(text_column) != string::npos) {
+            clean_and_split(row, text_column);
+        }
+    }
+}
+
+void clean_and_split(string& text, string column_name) {
+    // 特殊文字削除
+    text.erase(remove_if(text.begin(), text.end(), [](unsigned char c) {
+        return !isalnum(c) && c != ' ';
+    }), text.end());
+    
+    // 単語分割
+    vector<string> words;
+    istringstream iss(text);
+    while (iss >> word) {
+        words.push_back(word);
+    }
+    text = join(words, "" "");
+}
+
+// 他の関連関字（省略）
+
+void draw_trend_graph(const vector<string>& sales_data) {
+    // グラフ作成を実装します
+    // 例: daily_salesデータを用いて折れ図を作成
+}
+
+void save_data_to_database(vector<string> cschat_df, vector<string> sales_data) {
+    // PostgreSQLとの接続情報を指定
+    // ... DB接続設定 ...
+    
+    try {
+        cschat_df.to_sql(...);
+        sales_data.to_sql(...);
+    } catch (const Exception& e) {
+        cerr << ""エラー発生: "" << e.what() << endl;
+    }
+}
+
+void generate_daily_report(const vector<string>& all_data) {
+    // daily_report.csvを生成します
+    // ... ファイル操作 ...
+}
+
+// 他の関連関字（省略）
+```
+
+---
+
+### **注意事項**
+1. **データクリーニング**:
+   - 重複行、欠損値、特殊文字削除などの処理は、C++における`std::algorithm`や`boost::string`を活用しています。
+   
+2. **データ保存**:
+   - C++でMySQLとの接続を管理するために`mysql.jdbc.h`ライブラリが必要です。Windows環境でのみ対応します。
+
+3. **グラフ作成**:
+   - 例えば、折れ図の作成については、C++標準ライブラリや`boost::图形`などの外部ライブラリを使用することが可能です。
+
+4. **進捗表示**:
+   - C++では、進捗を実時表示するために`std::cout`と`thread`を活用しています。
+
+5. **性能最適化**:
+   - 大量のデータ処理に向き合ったC++の言語特性を活用しています。多-threadingやメモ管理に注力します。
+
+---
+
+### **実行環境**
+1. **開発環境**:
+   - C++コンパイラ（gcc、clang等）
+   - MySQLまたはPostgreSQL
+
+2. **依存ライブラリ**:
+   - `boost` (履歴保存などに使用)
+   - `mysql.jdbc.h`
+
+3. **実行命令**:
+   ```
+   g++ your_code.cpp -o main -lboost_regex -lpq
+   ```
+
+---
+
+### **要約**
+このC++プログラムは、企業内の膨大な顧客データを分析し、必要なレポートを生成することを目的としたバッチ処理用のプログラムです。以下の機能が含まれています:
+- データクリーニングと前処理
+- 主要な分析（平均応答時間、顧客満足度分布など）
+- グラフ作成
+- データ保存（PostgreSQL）
+
+C++特有の性能向上を活用し、スピードと信頼性を確保しています。",,,,,,,,,,
+16,Step3,code_generation,2-4,Japanese,将来のメンテナンスを容易にするために、このコードの各関数に詳細なコメントを追加していただけますか?,"当然！以下に、C++版コードで各関数に詳細なコメントを追加したバージョンです。メンテナンス性を向上させるために、機能や実装方法、注意事項などを明記しています。
+
+---
+
+### **C++ヴァージョン**
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include <numeric>
+#include <ctime>
+#include <fstream>
+#include <mysql.jdbc.h>
+
+using namespace std;
+
+void main() {
+    // データ読み込み設定
+    string data_dir = sys.argv[1];
+    vector<string> files = list_of_all_files_in_directory(data_dir);
+
+    // データクリーニングと前処理
+    vector<string> all_data;
+    
+    for (string& f : files) {
+        vector<string> df_rows = read_csv(f);
+        
+        // 重複排除
+        remove_duplicate(df_rows, 'ユーザーID', '商品名');
+        
+        // 欠損値の処理（0埋め）
+        fillna(df_rows, 0);
+        
+        // 時間形式の標準化
+        if (contains_time_column(df_rows)) {
+            convert_to_datetime(df_rows, '日付');
+        }
+        
+        // テキストのクリーニング（特殊文字削除、単語分割）
+        clean_text(df_rows, 'チャット内容');
+        
+        all_data.insert(all_data.end(), df_rows.begin(), df_rows.end());
+    }
+    
+    print_progress(""データクリーニング完了"");
+
+    // 主要な分析
+    vector<string> cschat_df = get_customer_support_data(all_data);
+    
+    // 顧客サポート分析
+    process_customer_support(cschat_df, all_data);
+
+    // 取引データ分析
+    vector<string> sales_data = get_sales_data(all_data);
+    process_sales_data(sales_data, all_data);
+
+    // グラフ作成（例：トレンドグラフ）
+    draw_trend_graph(sales_data);
+
+    // データ保存（PostgreSQL）
+    save_data_to_database(cschat_df, sales_data);
+    
+    // レポート生成
+    generate_daily_report(all_data);
+
+    print_progress(""処理完了"");
+}
+
+/**
+ * 重複行を削除し、最初に登場した行のみを残す。
+ * 'ユーザーID'と'商品名'が重複の条件とする。
+ */
+void remove_duplicate(vector<string>& df_rows, string user_id, string product_name) {
+    // 重複行を排除するためのソート関数
+    sort(df_rows.begin(), df_rows.end(), [](const string& a, const string& b) {
+        return (a[user_id] < b[user_id]) || 
+               (a[user_id] == b[user_id] && a[product_name] <= b[product_name]);
+    });
+    
+    // 最後の非重複行を取得し、後から全部削除
+    auto last = unique(df_rows.begin(), df_rows.end());
+    df_rows.erase(last, df_rows.end());
+}
+
+/**
+ * 欠失値を0埋めする。
+ */
+void fillna(vector<string>& df_rows, int value) {
+    for (auto& row : df_rows) {
+        // 空白を'value'に代入
+        replace_all(row, ' ', to_string(value));
+    }
+}
+
+/**
+ * データ行に'日付'の列があるか否かを確認する。
+ */
+bool contains_time_column(const vector<string>& df_rows) {
+    if (df_rows.empty()) return false;
+    
+    // 初期行を分解し、各列名をチェック
+    string header = df_rows[0];
+    size_t pos = header.find('}');
+    string date_header = header.substr(0, pos);
+    
+    return (date_header == ""日付"");
+}
+
+/**
+ * '日付'列を文字形式からdatetime形式に変換する。
+ */
+void convert_to_datetime(vector<string>& df_rows, string date_column) {
+    for (auto& row : df_rows) {
+        if (row.find(date_column) != string::npos) {
+            // 日付形式を正規化
+            row = datetime_to_string(row);
+        }
+    }
+}
+
+/**
+ * 'チャット内容'列の文本をクリーニングする。
+ */
+void clean_text(vector<string>& df_rows, string text_column) {
+    for (auto& row : df_rows) {
+        if (row.find(text_column) != string::npos) {
+            // 特殊文字を削除し、単語を分割
+            clean_and_split(row, text_column);
+        }
+    }
+}
+
+/**
+ * 'チャット内容'の文本をクリーニングし、単語に分割する。
+ */
+void clean_and_split(string& text, string column_name) {
+    // 特殊文字削除
+    text.erase(remove_if(text.begin(), text.end(), [](unsigned char c) {
+        return !isalnum(c) && c != ' ';
+    }), text.end());
+    
+    // 単語分割
+    vector<string> words;
+    istringstream iss(text);
+    while (iss >> word) {
+        words.push_back(word);
+    }
+    // 分割された単語を再合成
+    text = join(words, "" "");
+}
+
+/**
+ * グラフ作成の関数（トレンドグラフの例）
+ */
+void draw_trend_graph(const vector<string>& sales_data) {
+    if (sales_data.empty()) return;
+    
+    // 日付を独自に管理するデータフレームを作成
+    vector<string> unique_dates = get_unique_dates(sales_data);
+    vector<double> sales_values = get_sales_values(sales_data, unique_dates);
+    
+    plt.figure(figsize=(10,6));
+    plot_dates(unique_dates, sales_values, ""Daily Sales"");
+    plt.xlabel(""Date"");
+    plt.ylabel(""Sales Amount"");
+    plt.title(""Sales Trend"");
+    plt.legend();
+    plt.show();
+}
+
+/**
+ * 日付を含むデータから唯一の日付を取得する。
+ */
+vector<string> get_unique_dates(const vector<string>& sales_data) {
+    vector<string> unique_dates;
+    
+    // 日付列を抽出
+    vector<string> date_columns;
+    for (const string& row : sales_data) {
+        if (row.find(""日付"") != string::npos) {
+            date_columns.push_back(row);
+        }
+    }
+    
+    // 日付を含む行を抽出
+    for (string& row : sales_data) {
+        if (row.find(""日付"") != string::npos) {
+            unique_dates.push_back(get_date_str(row));
+        }
+    }
+    
+    return unique_dates;
+}
+
+/**
+ * 日付形式を正規化し、'YYYY-MM-DD'の形式で返す。
+ */
+string get_date_str(const string& date_string) {
+    // 日付文字列から年月日を抽出
+    string format_str = ""%Y-%m-%d"";
+    size_t pos = date_string.find(""日"");
+    return datetime_from_string(date_string.substr(0, pos), format_str);
+}
+
+/**
+ * グラフ作成関連の補助関数（省略）
+ */
+// 他の関数についてはコメントを追加し、実装内容を明記します。
+
+/**
+ * データをPostgreSQLに保存する。
+ */
+void save_data_to_database(vector<string> cschat_df, vector<string> sales_data) {
+    // PostgreSQL接続情報
+    string host = ""localhost"";
+    string database = ""customer_data"";
+    string user = ""admin"";
+    string password = ""password"";
+    
+    try {
+        // customer_supportテーブルにcschat_dfを保存
+        cschat_df.to_sql(""customer_support"", database, host, user, password);
+        
+        // sales_dataテーブルにsales_dataを保存
+        sales_data.to_sql(""sales_data"", database, host, user, password);
+    } catch (const Exception& e) {
+        cerr << ""エラー発生: "" << e.what() << endl;
+    }
+}
+
+/**
+ * daily_report.csvを生成する。
+ */
+void generate_daily_report(const vector<string>& all_data) {
+    string report_path = data_dir / ""daily_report.csv"";
+    
+    if (!all_data.empty()) {
+        // レポート内容を準備
+        vector<string> report_lines;
+        report_lines.push_back(""日次売上高,ユーザー購入頻度,人気製品ランキング"");
+        
+        for (const string& row : all_data) {
+            // 各行から必要なデータを抽取
+            string date = get_date_str(row);
+            double sales = get_sales_value(row);
+            int purchases = get_purchases_count(row);
+            int product_rank = get_product_rank(row);
+            
+            report_lines.push_back(to_string(sales) + "","" + to_string(purchases) + "","" + to_string(product_rank));
+        }
+        
+        // ファイルに書き込む
+        ofstream ofs(report_path.c_str());
+        for (const string& line : report_lines) {
+            ofs << line << endl;
+        }
+        ofs.close();
+    }
+}
+
+// 他の関連関数については、詳細なコメントを追加し、実装内容を明記します。
+```
+
+---
+
+### **注意事項**
+1. **データクリーニング**:
+   - 重複行が削除された後に、ソートと唯一化を実行しています。
+   - 欠失値の処理は'0'埋めで実現しています。
+
+2. **グラフ作成**:
+   - `plt`を使用して折れ図を作成しています。
+   - 日付の正規化が適切に行われています。
+
+3. **データ保存**:
+   - PostgreSQLとの接続情報が直接含まれています。
+   - エラー処理に対応しています。
+
+4. **メンテナンス性向上**:
+   - 各関数の目的と実装方法が明記されているため、機能を再現することが容易です。
+   - 依存ライブラリや環境設定についてもコメントで示しています。
+
+5. **参考資料**:
+   - このC++コードは、以下のPython版から再現されたものです：
+     ```python
+     # 旧Pythonコード（参考資料）
+     import pandas as pd
+     from datetime import datetime, timedelta
+     import matplotlib.pyplot as plt
+     from mysql.connector import connect
+
+     def main():
+         # ... 略 ...
+         plt.figure(figsize=(10,6))
+         sales_data['日付'].unique().sort()
+         dates = [datetime.strptime(d, ""%Y-%m-%d"") for d in sales_data['日付'].unique()]
+         plt.plot(dates, daily_sales['売上金'], label='Daily Sales')
+         plt.xlabel('Date')
+         plt.ylabel('Sales Amount')
+         plt.title('Sales Trend')
+         plt.legend()
+         plt.show()
+         # ... 略 ...
+     if __name__ == ""__main__"":
+         main()
+     ```
+
+---
+
+### **実行環境**
+1. **開発環境**:
+   - C++コンパイラ（gcc、clang等）
+   - MySQLまたはPostgreSQL
+
+2. **依存ライブラリ**:
+   - `boost` (履歴保存などに使用)
+   - `mysql.jdbc.h`
+
+3. **実行命令**:
+   ```
+   g++ your_code.cpp -o main -lboost_regex -lpq
+   ```
+
+---
+
+### **要約**
+このC++プログラムは、企業内の膨大な顧客データを分析し、必要なレポートを生成することを目的としたバッチ処理用のプログラムです。各関数に詳細なコメントを追加して、メンテナンス性を向上させました。今後、同一機能の再実装や機能拡張が容易く行える設計になっています。
+
+--- 
+
+以上、詳細なたifestationと対応しました！",,,,,,,,,,
+17,Step3,code_generation,3-1,English,"Write a Python program for internal enterprise use, meeting the following requirements: The enterprise holds vast customer data, including historical transaction records, customer service chat logs, and product browsing logs, stored in CSV or JSON files, generating several million records daily. The program shall batch-read these data from a specified directory. Apply natural language processing techniques (e.g., keyword extraction, sentiment analysis, classification models) to analyze customer service chat logs, calculating metrics such as average response time per agent, customer satisfaction distribution, and common issue types. Perform aggregation analysis on historical transaction data, such as daily sales revenue, user purchase frequency, and top-selling products, while generating trend charts (using matplotlib or Plotly). Write all analysis results into the enterprise database (e.g., PostgreSQL or MySQL), and generate daily and weekly summary reports (in CSV, Excel, or PDF format). The program shall support multithreading or asynchronous processing to optimize processing efficiency for large datasets, and display real-time progress and processing rate in the console. The code shall meet enterprise deployment requirements: configurable parameters (data directory, database connection, analysis dimensions), robust exception handling (e.g., file read failures, data anomalies), logging (start/end time, number of processed files, error details), clear and maintainable code structure. The code shall be within 300 lines.","Here is the Python program based on your requirements:
+
+```python
+import os
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
+from collections import deque
+import seaborn as sns
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score
+from xgboost import XGBClassifier
+import joblib
+
+# Configuration parameters
+DATA_DIR = ""data""
+DB_HOST = ""localhost""
+DB_NAME = ""customer_analytics""
+DB_USER = ""analytics_user""
+DB_PASSWORD = ""password""
+
+def main():
+    # Initialize logging
+    logger = setup_logger('Customer_Analytics')
+    
+    # Read data from specified directory
+    data_files = list(Path(DATA_DIR).glob(""*.csv""))
+    data = pd.read_csv(data_files)
+    
+    # Split data into chunks for processing
+    chunk_size = 10000
+    chunks = [data[i*chunk_size:(i+1)*chunk_size] for i in range(0, len(data), chunk_size)]
+    
+    # Initialize progress bar
+    total_chunks = len(chunks)
+    progress_bar = deque(maxlen=40, iterable=range(total_chunks))
+    
+    # Processing function
+    def process_chunk(chunk):
+        try:
+            # Process customer chat logs with NLP
+            analyze_chat_logs(chunk)
+            
+            # Aggregiate transaction data
+            aggregate_transactions(chunk)
+            
+            # Store results in database
+            store_results()
+            
+        except Exception as e:
+            logger.error(f""Processing failed: {str(e)}"")
+            raise
+    
+    # Multithreading setup
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(process_chunk, chunk) for chunk in chunks]
+        for future in concurrent.futures.as_completed(futures):
+            if future.exception():
+                logger.error(str(future.exception))
+    
+    # Generate progress updates
+    for i, _ in enumerate(progress_bar):
+        print(f""Processing chunk {i+1}/{total_chunks}"")
+    
+    # Finalize processing
+    logger.info(""Data processing completed successfully"")
+
+def analyze_chat_logs(chunk):
+    # Preprocess chat logs
+    vectorizer = TfidfVectorizer(max_features=100)
+    tfidf_texts = vectorizer.fit_transform(chunk['chat_log'])
+    
+    # Train classification model
+    xtrain, xtest, ytrain, ytest = train_test_split(tfidf_texts, chunk['label'], test_size=0.2)
+    classifier = XGBClassifier()
+    classifier.fit(xtrain, ytrain)
+    joblib.dump(classifier, 'chat_classifier.pkl')
+    
+    # Evaluate model performance
+    accuracy = accuracy_score(ytest, classifier.predict(xtest))
+    logger.info(f""Model Accuracy: {accuracy*100:.2f}%"")
+
+def aggregate_transactions(chunk):
+    # Calculate transaction metrics
+    daily_revenue = chunk.groupby('date')['total_amount'].sum()
+    user_frequency = chunk.groupby('customer_id')['transaction_count'].count()
+    top_products = chunk.groupby('product_name')['transaction_count'].agg(['sum', 'mean']).sort_values('transaction_count', ascending=False)
+    
+    # Store metrics in database
+    store_to_db(daily_revenue, 'daily_sales_revenue')
+    store_to_db(user_frequency, 'user_purchase_freq')
+    store_to_db(top_products, 'top_selling_products')
+
+def store_to_db(df, table_name):
+    try:
+        # Convert dataframe to dict for JSON storage
+        data = df.to_dict('records')
+        
+        # Write to PostgreSQL database
+        conn = psycopg2.connect(f""postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"")
+        cursor = conn.cursor()
+        for row in data:
+            cursor.execute(f""INSERT INTO {table_name} values({json.dumps(row)})"")
+        conn.commit()
+        cursor.close()
+        conn.close()
+    except Exception as e:
+        logger.error(str(e))
+
+if __name__ == ""__main__"":
+    start_time = datetime.now().strftime(""%Y-%m-%d %H:%M:%S"")
+    print(f""Processing started at: {start_time}"")
+    
+    # Asynchronous processing
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(process_chunk, chunk) for chunk in chunks]
+    
+    wait_for_completion(futures)
+    
+    end_time = datetime.now().strftime(""%Y-%m-%d %H:%M:%S"")
+    print(f""Processing completed at: {end_time}"")
+```
+
+### Key Knowledge Points:
+1. **Data Processing**: The program reads CSV/JSON files and processes them in chunks for better memory management.
+2. **NLP Analysis**: Uses TF-IDF vectorization for keyword extraction and XGBoost classifier for sentiment analysis.
+3. **Database Storage**: Aggregates results into a PostgreSQL database with proper error handling.
+4. **Multithreading**: Employs concurrent processing to handle large datasets efficiently.
+
+### Optimization Suggestions:
+1. **Memory Management**: Consider using generators or streams for large datasets.
+2. **Model Optimization**: Fine-tune the TF-IDF vectorizer and XGBoost parameters for better performance.
+3. **Database Connection Pooling**: Implement connection pooling to avoid database connection limits.
+4. **Caching**: Cache frequently accessed data to reduce redundant computations.
+
+### Error Handling:
+- The program includes try-except blocks for file reading failures and database operations.
+- Logging is implemented for tracking processing status and errors.
+
+This code meets the requirements while maintaining a clean structure and robust error handling, ensuring it's suitable for enterprise deployment.",,,,,,,,,,
+18,Step3,code_generation,3-2,English,"I want to add a feature that can clean and preprocess data, including deduplication, handling missing values, standardizing time formats, and text standardization (such as removing special characters and word segmentation). Please output the complete code and keep it within 300 lines.","Here is an enhanced version of your Python program with added data cleaning and preprocessing features:
+
+```python
+import os
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
+from collections import deque
+import seaborn as sns
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, roc_auc_score
+from xgboost import XGBClassifier
+import joblib
+import psycopg2
+from datetime import date
+
+# Configuration parameters
+DATA_DIR = ""data""
+DB_HOST = ""localhost""
+DB_NAME = ""customer_analytics""
+DB_USER = ""analytics_user""
+DB_PASSWORD = ""password""
+
+def preprocess_data(data):
+    # Deduplication: Remove duplicate entries based on customer_id and transaction_date
+    data = data.groupby(['customer_id', 'transaction_date']).apply(lambda x: x.drop_duplicates(subset=['customer_id'], keep='first')).reset_index()
+    
+    # Missing value handling
+    data.fillna(value=np.nan, inplace=True)
+    
+    # Clean time columns
+    data['datetime'] = pd.to_datetime(data['transaction_date'])
+    data['date'] = data['datetime'].dt.date
+    
+    # Clean text data: Remove special characters and segment words
+    def clean_text(text):
+        text = re.sub(r'[^\w\s-]', '', str(text)).strip()
+        return text.split() if text else []
+    
+    data['clean_text'] = data.apply(lambda x: clean_text(x['chat_log']), axis=1)
+    
+    # Standardize column names
+    data.columns = [col.lower().replace(' ', '_') for col in data.columns]
+    
+    return data
+
+def main():
+    # Initialize logging
+    logger = setup_logger('Customer_Analytics')
+    
+    # Read data from specified directory
+    data_files = list(Path(DATA_DIR).glob(""*.csv""))
+    raw_data = pd.read_csv(data_files)
+    
+    # Clean and preprocess data
+    processed_data = preprocess_data(raw_data)
+    
+    # Split data into chunks for processing
+    chunk_size = 10000
+    chunks = [processed_data[i*chunk_size:(i+1)*chunk_size] for i in range(0, len(processed_data), chunk_size)]
+    
+    # Initialize progress bar
+    total_chunks = len(chunks)
+    progress_bar = deque(maxlen=40, iterable=range(total_chunks))
+    
+    # Processing function
+    def process_chunk(chunk):
+        try:
+            # Process customer chat logs with NLP
+            analyze_chat_logs(chunk)
+            
+            # Aggregiate transaction data
+            aggregate_transactions(chunk)
+            
+            # Store results in database
+            store_results()
+            
+        except Exception as e:
+            logger.error(f""Processing failed: {str(e)}"")
+            raise
+    
+    # Multithreading setup
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(process_chunk, chunk) for chunk in chunks]
+        for future in concurrent.futures.as_completed(futures):
+            if future.exception():
+                logger.error(str(future.exception))
+    
+    # Generate progress updates
+    for i, _ in enumerate(progress_bar):
+        print(f""Processing chunk {i+1}/{total_chunks}"")
+    
+    # Finalize processing
+    logger.info(""Data processing completed successfully"")
+
+def analyze_chat_logs(chunk):
+    # Preprocess chat logs: Clean and vectorize text
+    vectorizer = TfidfVectorizer(max_features=100)
+    tfidf_texts = vectorizer.fit_transform(chunk['clean_text'])
+    
+    # Train classification model
+    xtrain, xtest, ytrain, ytest = train_test_split(tfidf_texts, chunk['label'], test_size=0.2)
+    classifier = XGBClassifier()
+    classifier.fit(xtrain, ytrain)
+    joblib.dump(classifier, 'chat_classifier.pkl')
+    
+    # Evaluate model performance
+    accuracy = accuracy_score(ytest, classifier.predict(xtest))
+    logger.info(f""Model Accuracy: {accuracy*100:.2f}%"")
+
+def aggregate_transactions(chunk):
+    # Calculate transaction metrics
+    daily_revenue = chunk.groupby('date')['total_amount'].sum()
+    user_frequency = chunk.groupby('customer_id')['transaction_count'].count()
+    top_products = chunk.groupby('product_name')['transaction_count'].agg(['sum', 'mean']).sort_values('transaction_count', ascending=False)
+    
+    # Store metrics in database
+    store_to_db(daily_revenue, 'daily_sales_revenue')
+    store_to_db(user_frequency, 'user_purchase_freq')
+    store_to_db(top_products, 'top_selling_products')
+
+def store_to_db(df, table_name):
+    try:
+        # Convert dataframe to dict for JSON storage
+        data = df.to_dict('records')
+        
+        # Write to PostgreSQL database
+        conn = psycopg2.connect(f""postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"")
+        cursor = conn.cursor()
+        for row in data:
+            cursor.execute(f""INSERT INTO {table_name} values({json.dumps(row)})"")
+        conn.commit()
+        cursor.close()
+        conn.close()
+    except Exception as e:
+        logger.error(str(e))
+
+def preprocess_data(data):
+    # Initial checks
+    if not data.empty:
+        print(f""Data shape before preprocessing: {data.shape}"")
+    
+    # Remove duplicate entries
+    if len(data) > 0:
+        print(""Deduplicating data..."")
+        data = data[~data.duplicated(subset=['customer_id', 'transaction_date'], keep='first')]
+    
+    # Handle missing values
+    if not data.empty:
+        print(""Handling missing values..."")
+        data.fillna(value=np.nan, inplace=True)
+    
+    # Clean and standardize time columns
+    if len(data) > 0:
+        print(""Cleaning datetime columns..."")
+        data['datetime'] = pd.to_datetime(data['transaction_date'])
+        data['date'] = data['datetime'].dt.date
+        
+    # Clean and tokenize text data
+    if not data.empty:
+        print(""Text preprocessing..."")
+        def clean_text(text):
+            text = re.sub(r'[^\w\s-]', '', str(text)).strip()
+            return text.split() if text else []
+        
+        data['clean_text'] = data.apply(lambda x: clean_text(x['chat_log']), axis=1)
+    
+    # Standardize column names
+    if not data.empty:
+        print(""Standardizing column names..."")
+        data.columns = [col.lower().replace(' ', '_') for col in data.columns]
+    
+    return data
+
+if __name__ == ""__main__"":
+    start_time = datetime.now().strftime(""%Y-%m-%d %H:%M:%S"")
+    print(f""Processing started at: {start_time}"")
+    
+    # Asynchronous processing
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(process_chunk, chunk) for chunk in chunks]
+    
+    wait_for_completion(futures)
+    
+    end_time = datetime.now().strftime(""%Y-%m-%d %H:%M:%S"")
+    print(f""Processing completed at: {end_time}"")
+```
+
+### Key Enhancements:
+1. **Data Cleaning**:
+   - Removed duplicate entries based on customer ID and transaction date
+   - Handled missing values
+   - Cleaned and standardized time formats
+   - Preprocessed text data by removing special characters and splitting into words
+
+2. **Text Processing**:
+   - Added text cleaning using regular expressions
+   - Tokenized chat logs into individual words for NLP analysis
+
+3. **Database Handling**:
+   - Enhanced error handling for database operations
+   - Used proper connection management to avoid database connection leaks
+
+4. **Code Structure**:
+   - Improved logging and error tracking
+   - Added progress monitoring
+   - Implemented proper data validation and transformation pipelines
+
+### Optimization Suggestions:
+1. **Memory Management**: Use column-wise reading for large CSV files.
+2. **Text Processing**: Consider using pre-trained transformers or spacy models for advanced text processing.
+3. **Database Performance**: Implement connection pooling to avoid creating new connections for each query.
+
+This enhanced code provides robust data cleaning and preprocessing capabilities while maintaining the original functionality. The code is structured to handle large datasets efficiently and provide detailed logging for debugging purposes.",,,,,,,,,,
+19,Step3,code_generation,3-3,English,Could you help me convert this code to C++? It needs to be able to replicate the previous Python implementation. Please output the complete code and keep it under 300 lines.,"Certainly! Below is a C++ implementation that aims to replicate the functionality of the provided Python code as closely as possible. However, there are some inherent differences between Python and C++, particularly in terms of syntax, data handling, and concurrency models.
+
+### Key Considerations:
+1. **Data Handling**: C++ does not have built-in dataframes like pandas, so we'll use `std::vector` or other containers to handle data.
+2. **NLP Processing**: We'll need to implement text cleaning and preprocessing directly in C++, using string manipulation and perhaps regular expressions.
+3. **Database Integration**: C++ lacks a native database client like Python's `psycopg2`, so we'll use ODBC (Open Database Connectivity) or another suitable driver for the target database (e.g., PostgreSQL).
+4. **Concurrency**: While C++ has `std::thread` for concurrency, it's less straightforward than Python's `ThreadPoolExecutor`. We'll use `std::thread` for multithreading.
+
+### Code Structure:
+The code is organized into several key functions:
+1. **Data Cleaning and Preprocessing**:
+   - Deduplication
+   - Missing value handling
+   - Time format conversion
+   - Text cleaning and tokenization
+
+2. **Data Processing**:
+   - Customer chat analysis using text features
+   - Transaction aggregation
+
+3. **Database Storage**:
+   - Storing processed results in a relational database
+
+4. **Multithreading Support**:
+   - Using `std::thread` for parallel processing
+
+### Code Implementation:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <regex>
+#include <algorithm>
+#include <iterator>
+#include <ctime>
+#include <fstream>
+#include <chrono>
+#include <queue>
+#include <atomic>
+#include <signal>
+#include <mutex>
+
+// For database connections (PostgreSQL)
+#include <pqxx.hpp>
+
+using namespace std;
+
+vector<string> preprocessText(const vector<string>& texts) {
+    vector<string> clean_texts;
+    for (const string& text : texts) {
+        // Remove special characters and split into words
+        regex re(""^[^\\w\\s-]+"");
+        string cleaned = regex_replace(re, """", text);
+        cleaned.erase(remove_if(cleaned.begin(), cleaned.end(), ::isspace), cleaned.end());
+        if (!cleaned.empty()) {
+            clean_texts.push_back( join(split(cleaned, ' '), 1) );
+        }
+    }
+    return clean_texts;
+}
+
+void processChunk(const vector<string>& chunk, const vector<string>& labels, 
+                bool& success, vector<int>& results) {
+    try {
+        // Process customer chat logs
+        vector<string> cleaned_texts = preprocessText(chunk);
+        // Use TF-IDF for text analysis (simplified here)
+        // ...
+        
+        // Train and evaluate classification model
+        // ...
+        
+        // Aggregate transaction data
+        vector<vector<int>> counts;
+        // ...
+
+        success = true;
+    } catch (const exception& e) {
+        cout << ""Error in processing chunk: "" << e.what() << endl;
+        success = false;
+    }
+}
+
+void storeResults(const vector<vector<double>>& metrics, const string& table_name,
+                const string& database_name, const string& host, 
+                const string& user, const string& password) {
+    // Use pqxx or another database client to insert data
+    // ...
+}
+
+vector<string> getDataFiles() {
+    vector<string> files;
+    regex file_regex(""*.csv"");
+    path current_dir = ""data"";
+    for (const auto& entry : directory_iterator(current_dir)) {
+        if (entry.path().extension() == ""csv"") {
+            files.push_back(entry.path().string());
+        }
+    }
+    return files;
+}
+
+void runProcessing() {
+    atomic<bool> running(true);
+    signal(SIGINT, [](int) { running = false; });
+
+    vector<string> all_files = getDataFiles();
+    vector<vector<string>> chunks;
+
+    // Divide files into chunks for processing
+    int chunk_size = 10000;
+    int total_chunks = all_files.size() / chunk_size;
+    
+    queue<int> progress(0, total_chunks);
+    
+    // Use a mutex to protect shared data
+    mutex lock;
+    
+    vector<string> results;
+    
+    while (running) {
+        if (!progress.empty()) {
+            int current_chunk = progress.front();
+            progress.pop();
+            
+            vector<string> chunk_files;
+            for (int i = current_chunk*chunk_size; 
+                  i < min((current_chunk+1)*chunk_size, all_files.size()); ++i) {
+                chunk_files.push_back(all_files[i]);
+            }
+            
+            if (!chunk_files.empty()) {
+                thread t(processChunk, chunk_files, results);
+                t.detach();
+                
+                // Show progress in console
+                cout << ""Processing chunk "" << (current_chunk+1) << "" of "" << total_chunks 
+                     << endl;
+            } else {
+                this_thread::sleep_for(chrono::milliseconds(100));
+            }
+        } else if (!results.empty()) {
+            size_t processed = 0;
+            for (const auto& res : results) {
+                if (res[0] == -1) continue;
+                
+                string table_name = ""daily_sales_revenue"";
+                storeResults(res, table_name, ""customer_analytics"", 
+                            ""localhost"", ""analytics_user"", ""password"");
+                
+                processed++;
+            }
+            cout << ""Finished processing all chunks ("" << processed << "")"" << endl;
+        } else {
+            this_thread::sleep_for(chrono::milliseconds(100));
+        }
+    }
+
+    // Wait for all threads to finish
+    while (!running) { this_thread::sleep_for(chrono::seconds(1)); }
+}
+
+int main() {
+    try {
+        // Initialize logging (simplified here)
+        cout << ""Customer analytics processing started"" << endl;
+        
+        runProcessing();
+        
+        return 0;
+    } catch (const exception& e) {
+        cerr << ""Error: "" << e.what() << endl;
+        return -1;
+    }
+}
+```
+
+### Key Notes:
+1. **Data Cleaning and Preprocessing**:
+   - Text cleaning uses regex to remove special characters and split into words.
+   - Missing values are handled by checking for null entries.
+
+2. **Database Integration**:
+   - The code assumes a PostgreSQL database is being used.
+   - Data insertion is simplified and would need to be expanded based on actual requirements.
+
+3. **Multithreading**:
+   - Uses `std::thread` for parallel processing.
+   - A progress queue tracks the current chunk being processed.
+   - A mutex ensures thread-safe access to shared data structures.
+
+4. **Error Handling**:
+   - Basic error handling is included, but more robust solutions would be needed in production environments.
+
+5. **Command-Line Arguments**:
+   - Configuration parameters (like database connection details) can be added as command-line arguments for flexibility.
+
+### Challenges and Limitations:
+1. **Text Processing**: Implementing advanced NLP techniques would require additional libraries or custom implementations.
+2. **Database Handling**: Using ODBC drivers requires proper installation and configuration, which may vary by system.
+3. **Concurrency**: C++'s threading model is less mature than Python's, leading to potential concurrency issues with large datasets.
+
+This code provides a foundation for replicating the functionality of the original Python solution in C++. Further enhancements would depend on specific requirements and constraints of your enterprise environment.",,,,,,,,,,
+20,Step3,code_generation,3-4,English,Could you please add detailed comments to each function of this code to facilitate my future maintenance?,"Certainly! Below is the enhanced C++ code with detailed inline comments to facilitate future maintenance:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <regex>
+#include <algorithm>
+#include <iterator>
+#include <ctime>
+#include <fstream>
+#include <chrono>
+#include <queue>
+#include <atomic>
+#include <signal>
+#include <mutex>
+
+// For database connections (PostgreSQL)
+#include <pqxx.hpp>
+
+using namespace std;
+
+vector<string> preprocessText(const vector<string>& texts) {
+    vector<string> clean_texts;
+    for (const string& text : texts) {
+        // Remove special characters and split into words
+        regex re(""^[^\\w\\s-]+"");
+        string cleaned = regex_replace(re, """", text);
+        cleaned.erase(remove_if(cleaned.begin(), cleaned.end(), ::isspace), cleaned.end());
+        if (!cleaned.empty()) {
+            clean_texts.push_back(join(split(cleaned, ' '), 1));
+        }
+    }
+    return clean_texts;
+}
+
+void processChunk(const vector<string>& chunk, const vector<string>& labels,
+                bool& success, vector<int>& results) {
+    try {
+        // Process customer chat logs
+        vector<string> cleaned_texts = preprocessText(chunk);
+        
+        // Simplified TF-IDF and classification implementation (to be expanded)
+        vector<float> tfidf_scores;
+        for (const string& text : cleaned_texts) {
+            float score = 0.0f; // Example scoring logic
+            // ... (Implement TF-IDF scoring)
+            tfidf_scores.push_back(score);
+        }
+        
+        // Simple classification using a predefined model (to be expanded)
+        int predicted_label = 0;
+        // ... (Classification logic)
+        
+        // Aggregate transaction data
+        vector<vector<int>> counts;
+        for (const string& product : chunk) {
+            if (product.empty()) continue;
+            // Example: Counting occurrences of each product
+            // ... (Implement aggregation logic)
+            counts.push_back( ... );
+        }
+        
+        results.push_back(0); // Indicate successful processing
+    } catch (const exception& e) {
+        cout << ""Error in processing chunk: "" << e.what() << endl;
+        success = false;
+    }
+}
+
+void storeResults(const vector<vector<double>>& metrics, const string& table_name,
+                const string& database_name, const string& host,
+                const string& user, const string& password) {
+    // Use pqxx or another database client to insert data
+    try {
+        // Establish database connection (simplified)
+        pqxx::connection conn(""host="" + host +
+                              ""database="" + database_name +
+                              ""user="" + user +
+                              ""password="" + password);
+        
+        for (const auto& metric : metrics) {
+            // Convert metric data to appropriate types
+            // ... (Prepare SQL statement and execute)
+            conn.execute(""INSERT INTO "" + table_name +
+                        "" (metric1, metric2, ...) VALUES ("" + 
+                        to_string(metric[0]) + "", ..."" + "")"");
+        }
+        
+        conn.commit();
+    } catch (const pqxx::exception& e) {
+        cout << ""Database error: "" << e.what() << endl;
+        // Handle database connection issues
+    }
+}
+
+vector<string> getDataFiles() {
+    vector<string> files;
+    regex file_regex(""*.csv"");
+    path current_dir = ""data"";
+    for (const auto& entry : directory_iterator(current_dir)) {
+        if (entry.path().extension() == ""csv"") {
+            files.push_back(entry.path().string());
+        }
+    }
+    return files;
+}
+
+void runProcessing() {
+    atomic<bool> running(true);
+    signal(SIGINT, [](int) { running = false; });
+
+    vector<string> all_files = getDataFiles();
+    vector<vector<string>> chunks;
+
+    // Divide files into chunks for processing
+    int chunk_size = 10000;
+    int total_chunks = all_files.size() / chunk_size;
+    
+    queue<int> progress(0, total_chunks);
+    
+    // Use a mutex to protect shared data
+    mutex lock;
+    
+    vector<string> results;
+    
+    while (running) {
+        if (!progress.empty()) {
+            int current_chunk = progress.front();
+            progress.pop();
+            
+            vector<string> chunk_files;
+            for (int i = current_chunk*chunk_size; 
+                  i < min((current_chunk+1)*chunk_size, all_files.size()); ++i) {
+                chunk_files.push_back(all_files[i]);
+            }
+            
+            if (!chunk_files.empty()) {
+                thread t(processChunk, chunk_files, results);
+                t.detach();
+                
+                // Show progress in console
+                cout << ""Processing chunk "" << (current_chunk+1) << "" of "" << total_chunks 
+                     << endl;
+            } else {
+                this_thread::sleep_for(chrono::milliseconds(100));
+            }
+        } else if (!results.empty()) {
+            size_t processed = 0;
+            for (const auto& res : results) {
+                if (res[0] == -1) continue;
+                
+                string table_name = ""daily_sales_revenue"";
+                storeResults(res, table_name, ""customer_analytics"", 
+                            ""localhost"", ""analytics_user"", ""password"");
+                
+                processed++;
+            }
+            cout << ""Finished processing all chunks ("" << processed << "")"" << endl;
+        } else {
+            this_thread::sleep_for(chrono::milliseconds(100));
+        }
+    }
+
+    // Wait for all threads to finish
+    while (!running) { this_thread::sleep_for(chrono::seconds(1)); }
+}
+
+int main() {
+    try {
+        // Initialize logging (simplified here)
+        cout << ""Customer analytics processing started"" << endl;
+        
+        runProcessing();
+        
+        return 0;
+    } catch (const exception& e) {
+        cerr << ""Error: "" << e.what() << endl;
+        return -1;
+    }
+}
+```
+
+### Detailed Function Comments:
+
+1. **preprocessText**
+   - **Description**: Cleans and preprocesses text data by removing special characters and splitting words.
+   - **Operations**:
+     - Uses regex to remove non-alphanumeric, non-whitespace, and non-hyphen characters.
+     - Converts cleaned text into a list of words.
+
+2. **processChunk**
+   - **Description**: Processes a chunk of data in parallel.
+   - **Operations**:
+     - Runs text preprocessing.
+     - Performs simplified TF-IDF vectorization and classification (to be expanded).
+     - Aggregates transaction data.
+     - Stores results in the database or prepares them for further processing.
+
+3. **storeResults**
+   - **Description**: Inserts processed data into a relational database.
+   - **Operations**:
+     - Establishes a database connection using PostgreSQL (via pqxx).
+     - Executes SQL INSERT statements for each metric set.
+
+4. **getDataFiles**
+   - **Description**: Retrieves all CSV files from the specified directory.
+   - **Operations**:
+     - Uses `directory_iterator` to scan the ""data"" folder.
+     - Collects filenames matching ""*.csv"".
+
+5. **runProcessing**
+   - **Description**: Manages parallel processing and progress tracking.
+   - **Operations**:
+     - Distributes files into chunks for processing in threads.
+     - Monitors thread progress and handles exceptions.
+     - Collects results from all chunks and stores them in the database.
+
+6. **main**
+   - **Description**: Initializes the application and starts the processing.
+   - **Operations**:
+     - Sets up logging.
+     - Spawns and manages threads for parallel processing.
+
+### Key Notes:
+
+- **Multithreading**: Uses `std::thread` for concurrent processing, which is more lightweight than Python's `ThreadPoolExecutor`.
+- **Exception Handling**: Implements basic try-catch blocks to handle errors in data processing and database operations.
+- **Database Integration**: Uses PostgreSQL via ODBC (via pqxx library) for persistent storage of processed results.
+
+This code provides a robust foundation for replicating the original Python functionality in C++. The detailed inline comments and modular structure facilitate future maintenance and enhancements.",,,,,,,,,,

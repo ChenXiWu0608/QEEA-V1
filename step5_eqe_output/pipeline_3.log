@@ -1,0 +1,155 @@
+============================================================
+  ABILITY SCORE CALCULATION (Step 3)
+============================================================
+
+--- Loading data ---
+
+Loaded 204160 rows from 2720 CSVs (0 errors)
+
+--- Validating labels ---
+  vs_1: valid=203986, invalid_known=0, unknown=174
+  vs_2: valid=203973, invalid_known=0, unknown=187
+
+--- Resolving substeps ---
+
+--- Merging per item ---
+  [INFO] Dropping 69 items with both directions invalid
+
+--- Computing D_k ---
+
+--- Aggregating W scores ---
+  4400 groups
+
+--- Computing Ability scores ---
+  1100 (test_model, step, judge) entries
+
+--- Saving outputs ---
+  Saved D_coefficients.csv
+  Saved item_merged.csv (204091 rows)
+  Saved W_scores.csv (4400 rows)
+  Saved ability_scores.csv (1100 rows)
+  Saved ability_wide.csv (220 rows)
+
+============================================================
+  SELF CHECK
+============================================================
+
+--- D_k precision check ---
+  D_weak = 1.000000  (expected ~1.0000)  diff=0.000000  [OK]
+  D_mid = 1.068429  (expected ~1.0684)  diff=0.000029  [OK]
+  D_strong = 1.132610  (expected ~1.1326)  diff=0.000010  [OK]
+  D_cross = 1.032091  (expected ~1.0321)  diff=0.000009  [OK]
+
+--- Step1 substep unique items ---
+  ArenaHard: 100  (expected 100)  [OK]
+  LiveCodeBench: 50  (expected 50)  [OK]
+  GPQA: 50  (expected 50)  [OK]
+  UNMAPPED: 0  [OK]
+
+--- Bidirectional coverage ---
+  Both directions valid:  203868 (99.9%)
+  Only vs_1 valid:          118 (0.1%)
+  Only vs_2 valid:          105 (0.1%)
+  Both invalid (dropped):     69 (0.0%)
+  Dropped from merge:        69
+
+  vs_1 invalid (known):        0
+  vs_1 unknown:              174
+  vs_2 invalid (known):        0
+  vs_2 unknown:              187
+
+--- Single-direction ratio per (model, step, baseline, judge) ---
+  No groups with >50% single-direction items  [OK]
+
+--- Anchor coverage per (test_model, step, judge) ---
+  All groups have all 4 anchors  [OK]
+
+--- Unknown label values ---
+  Found 361 unknown label(s):
+    '>': 267 occurrences (vs_1=121, vs_2=146)
+      row=202, col=vs_1
+      row=213, col=vs_1
+      row=213, col=vs_2
+    'B': 19 occurrences (vs_1=17, vs_2=2)
+      row=105795, col=vs_1
+      row=107172, col=vs_1
+      row=107398, col=vs_1
+    'A': 12 occurrences (vs_1=11, vs_2=1)
+      row=20866, col=vs_1
+      row=21666, col=vs_1
+      row=22466, col=vs_1
+    'A<<<B': 10 occurrences (vs_1=10, vs_2=0)
+      row=106776, col=vs_1
+      row=109976, col=vs_1
+      row=110776, col=vs_1
+    'zero': 7 occurrences (vs_1=7, vs_2=0)
+      row=105869, col=vs_1
+      row=106669, col=vs_1
+      row=108269, col=vs_1
+    'A<<?': 7 occurrences (vs_1=0, vs_2=7)
+      row=109195, col=vs_2
+      row=123595, col=vs_2
+      row=123795, col=vs_2
+    'anwser3': 6 occurrences (vs_1=0, vs_2=6)
+      row=110959, col=vs_2
+      row=111759, col=vs_2
+      row=119759, col=vs_2
+    'A<4': 5 occurrences (vs_1=0, vs_2=5)
+      row=109395, col=vs_2
+      row=119795, col=vs_2
+      row=122795, col=vs_2
+    '<': 4 occurrences (vs_1=2, vs_2=2)
+      row=9999, col=vs_2
+      row=11496, col=vs_2
+      row=14275, col=vs_1
+    'B<3': 4 occurrences (vs_1=1, vs_2=3)
+      row=112576, col=vs_2
+      row=129979, col=vs_2
+      row=131979, col=vs_1
+    'anwser4': 3 occurrences (vs_1=1, vs_2=2)
+      row=110159, col=vs_2
+      row=111559, col=vs_2
+      row=126154, col=vs_1
+    'A<>': 3 occurrences (vs_1=0, vs_2=3)
+      row=119988, col=vs_2
+      row=122397, col=vs_2
+      row=127997, col=vs_2
+    'A3': 2 occurrences (vs_1=0, vs_2=2)
+      row=107354, col=vs_2
+      row=140154, col=vs_2
+    'anwser4=A=B': 1 occurrences (vs_1=0, vs_2=1)
+      row=110759, col=vs_2
+    'anwser2=A>B': 1 occurrences (vs_1=0, vs_2=1)
+      row=111159, col=vs_2
+    'A<=>B': 1 occurrences (vs_1=1, vs_2=0)
+      row=111576, col=vs_1
+    'C>B': 1 occurrences (vs_1=0, vs_2=1)
+      row=111996, col=vs_2
+    'B>1': 1 occurrences (vs_1=1, vs_2=0)
+      row=118790, col=vs_1
+    'anwser1': 1 occurrences (vs_1=0, vs_2=1)
+      row=120984, col=vs_2
+    'anwser2': 1 occurrences (vs_1=1, vs_2=0)
+      row=123154, col=vs_1
+    'A<7': 1 occurrences (vs_1=0, vs_2=1)
+      row=124395, col=vs_2
+    'answer3': 1 occurrences (vs_1=0, vs_2=1)
+      row=132954, col=vs_2
+    'anwser4<<anwser2': 1 occurrences (vs_1=0, vs_2=1)
+      row=132963, col=vs_2
+    'answer2': 1 occurrences (vs_1=1, vs_2=0)
+      row=136959, col=vs_1
+    'E<B': 1 occurrences (vs_1=0, vs_2=1)
+      row=137559, col=vs_2
+
+--- Data integrity summary ---
+  Total rows loaded:         204160
+  Rows after merge drop:     204091
+  NaN in item_W (should be 0): 0
+  NaN in W_scores:           0
+  NaN in ability:            0
+
+============================================================
+  SOME CHECKS FAILED - review warnings above
+============================================================
+

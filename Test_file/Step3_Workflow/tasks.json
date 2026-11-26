@@ -1,0 +1,64 @@
+[
+  {
+    "task_id": 1,
+    "workflow_name": "customer_bot",
+    "api_key": "app-yXVsxxDtjkvBxdQI6J2Kxpav",
+    "questions": [
+      "今年の第2回研究室発表会の詳細を教えて。",
+      "今年の第3回研究室発表会と特別演習Bの日程はかぶることがあるか？",
+      "今年の第1回発表会の情報で来年の第1回発表会の日程を予測してください。"
+    ]
+  },
+  {
+    "task_id": 2,
+    "workflow_name": "deep_research",
+    "api_key": "app-HxvXR3LUPAa4HanubNnvO3SU",
+    "questions": [
+      "请调查核能发电的未来。用中文输出。",
+      "原子力発電の未来について調査してください。結果は日本語で出力してください。",
+      "Please investigate the future of nuclear power generation. Output in English."
+    ]
+  },
+  {
+    "task_id": 3,
+    "workflow_name": "multilingual_translation",
+    "api_key": "app-3jDOa6WvQRWTVGzRQI4huGzj",
+    "questions": [
+      {
+        "source_lang": "ja",
+        "target_lang": "en",
+        "source_text": "来月の現地視察に関する詳細確認のお願い\n\nABC Corporation\nSales & Marketing Department\nMr. John Smith\n\nいつも大変お世話になっております。\n早稲田株式会社　国際事業部の佐藤と申します。\n\n先日は、弊社の現地視察に関するご調整にご対応いただき、誠にありがとうございます。\n来月（11月）に予定しております貴社工場への訪問につきまして、事前にいくつか確認・ご相談させていただきたい点がございます。\n\n以下、ご確認のほどお願い申し上げます。\n\n【1】視察予定日およびスケジュールについて\n現時点では、11月12日（火）〜14日（木）のいずれかの日程で訪問を検討しております。御社のご都合はいかがでしょうか。また、工場見学に加え、技術説明や質疑応答の時間を設けさせていただければと考えております。\n\n【2】視察内容の詳細\n弊社としては、以下の項目を中心に視察・確認を希望しております：\n- 生産ラインの自動化プロセスの見学\n- 品質管理体制および安全基準の運用状況\n- 環境対応設備（排気・排水処理システムなど）の確認\n- 新製品開発に関するご説明（可能な範囲で結構です）\nこれらの内容について、当日のアジェンダ案などがございましたら、事前に共有いただけますと幸いです。\n\n【3】通訳および移動に関するサポート\n現地での通訳手配や、空港からの送迎などについて、御社にてご支援いただくことは可能でしょうか。もし御社の方で推奨のホテルや交通手段（鉄道・車両など）がありましたら、併せてご案内いただけますと助かります。\n\n【4】参加予定メンバー\n弊社からは以下の3名が参加を予定しております：\n- 国際事業部　部長　山田太郎\n- 技術開発部　主任　佐藤花子\n- 営業部　担当　鈴木一郎\n\nお忙しいところ恐れ入りますが、10月25日（金）までにご回答をいただけますと幸いです。\n何卒よろしくお願い申し上げます。ご不明点などございましたら、どうぞお気軽にお知らせください。\n\n敬具\n\n―――――――――――――――――――\n早稲田株式会社\n国際事業部　佐藤\nTEL：03-1234-5678\nE-mail：sato@waseda.co.jp\n住所：〒169-18555 東京都新宿区大久保3-4-1\n―――――――――――――――――――"
+      },
+      {
+        "source_lang": "en",
+        "target_lang": "ja",
+        "source_text": "Confirmation of Upcoming Factory Visit in November\n\nDear Mr. Sato,\n\nThank you very much for your kind email. We greatly appreciate your continued interest in visiting our factory and taking the time to coordinate this inspection.\n\nRegarding the upcoming visit planned for November, we would like to provide the following information and confirm a few details in advance:\n\n1. Proposed Visit Date and Schedule\nWe are available to host your team from Tuesday, November 12th to Thursday, November 14th, and we are happy to adjust according to your preference. In addition to the factory tour, we can arrange sessions for technical presentations and Q&A, which will allow your team to gain a comprehensive understanding of our operations. We can prepare a preliminary agenda for your review prior to the visit.\n\n2. Visit Agenda and Key Areas\nWe understand that your main interests include the following:\n- Observation of automated production lines\n- Review of quality control systems and safety standards\n- Inspection of environmental compliance facilities (exhaust and wastewater treatment systems)\n- Overview of new product development (as much as can be shared)\nWe will prepare relevant materials and arrange demonstrations to ensure that each of these areas is covered. A draft agenda will be shared with you shortly.\n\n3. Support for Translation and Transportation\nWe can arrange an English-Japanese interpreter for your team on the day of the visit. Transportation from the airport to our factory can also be coordinated. Regarding accommodation, we recommend Hotel XYZ which is conveniently located near the factory. Local transportation by taxi or private shuttle will be available as needed.\n\n4. Participating Team Members\nWe have noted that the following colleagues from your side will attend:\n- Mr. Taro Yamada, General Manager, International Business Department\n- Ms. Hanako Sato, Senior Engineer, Technical Development Department\n- Mr. Ichiro Suzuki, Sales Representative\n\nPlease let us know your preferred visit date by Friday, October 25th so that we can finalize the agenda and make the necessary arrangements.\n\nIf you have any additional questions or requests, do not hesitate to reach out. We look forward to welcoming your team next month.\n\nBest regards,\n\nJohn Smith\nSales & Marketing Department\nABC Corporation\nTEL: +81-3-xxxx-xxxx\nE-mail: john.Smith@abc-corp.co.jp"
+      }
+    ]
+  },
+  {
+    "task_id": 4,
+    "workflow_name": "code_generation",
+    "api_key": "app-l7uVDGgqapmHxP6KdP3bzIgS",
+    "questions": [
+      [
+        "请编写一个企业内部 Python 程序，满足以下要求：企业拥有海量客户数据，包括历史交易记录、客服聊天记录和产品浏览日志，存储在 CSV 或 JSON 文件中，每天产生数百万条记录。程序需要从指定目录批量读取这些数据。利用自然语言处理技术（例如关键词提取、情感分析、分类模型）分析客服聊天记录，统计每个客服的平均响应时间、客户满意度分布、常见问题类型等指标。对历史交易数据进行聚合分析，例如每日销售额、用户购买频次、热门产品排行，同时生成趋势图表（可使用 matplotlib 或 plotly）。所有分析结果要写入企业数据库（如 PostgreSQL 或 MySQL），并生成每日、每周汇总报表（CSV/Excel/PDF）。程序应支持多线程或异步处理，优化大数据处理效率，并在控制台显示实时进度和处理速率。代码应具有企业部署要求：可配置参数（数据目录、数据库连接、分析维度）、健全异常处理（如文件读取失败、数据异常）、日志记录（处理开始/结束时间、处理文件数、异常信息）、代码结构清晰且可维护。代码应控制在300行以内。",
+        "我想要增加一个功能，使其可以对数据进行清洗和预处理，包括去重、缺失值处理、时间格式统一、文本标准化（如去掉特殊符号、分词）。请输出完整代码并控制在300行以内。",
+        "你能帮我我把这个代码转换成C++吗？要保证能实现之前python实现的代码。请输出完整代码并控制在300行以内。",
+        "能否帮我给这个代码的每一个功能都写上详细的注释方便我日后维护。"
+      ],
+      [
+        "以下の要求に基づいて、企業内用Pythonプログラムを開発してほしい。企業は膨大な顧客データを保有しており、過去の取引記録、カスタマーサポートのチャット記録、製品閲覧ログがCSVまたはJSON形式で保存されており、毎日数百万件のレコードが生成される。プログラムは指定されたディレクトリからこれらのデータをバッチ処理で読み込む。自然言語処理技術（キーワード抽出、感情分析、分類モデルなど）を活用し、カスタマーサポートのチャット記録を分析。各カスタマーサポートの平均応答時間、顧客満足度の分布、頻出の問い合わせタイプなどを統計する。過去の取引データに対して集計分析を実施し、日次売上高、ユーザーの購入頻度、人気製品ランキングなどを算出。matplotlibまたはplotlyを用いてトレンドグラフを生成する。すべての分析結果を企業のデータベース（PostgreSQLまたはMySQL）に書き込み、日次・週次集計レポート（CSV/Excel/PDF形式）を生成する。プログラムはマルチスレッドまたは非同期処理をサポートし、大規模データ処理の効率を最適化。コンソール上にリアルタイムの処理進捗と処理速度を表示する。コードは企業向けデプロイ要件を満たすべきである。設定可能なパラメータ（データディレクトリ、データベース接続情報、分析次元）、健全な例外処理（ファイル読み取り失敗、データ異常など）、ログ記録（処理開始・終了時刻、処理ファイル数、異常情報）、明確なコード構造。コードは300行以内に収めなさい。",
+        "重複排除、欠損値の処理、時間形式の標準化、テキストの標準化 (特殊文字の削除や単語の分割など) など、データのクリーニングと前処理を実行できる機能を追加してほしい。完全なコードを出力し、300 行以内に収めてください。",
+        "このコードをC++に変換するのを手伝っていただけますか？以前のPython実装を再現できるようにする必要があります。完全なコードを出力し、300行以内にしてください。",
+        "将来のメンテナンスを容易にするために、このコードの各関数に詳細なコメントを追加していただけますか?"
+      ],
+      [
+        "Write a Python program for internal enterprise use, meeting the following requirements: The enterprise holds vast customer data, including historical transaction records, customer service chat logs, and product browsing logs, stored in CSV or JSON files, generating several million records daily. The program shall batch-read these data from a specified directory. Apply natural language processing techniques (e.g., keyword extraction, sentiment analysis, classification models) to analyze customer service chat logs, calculating metrics such as average response time per agent, customer satisfaction distribution, and common issue types. Perform aggregation analysis on historical transaction data, such as daily sales revenue, user purchase frequency, and top-selling products, while generating trend charts (using matplotlib or Plotly). Write all analysis results into the enterprise database (e.g., PostgreSQL or MySQL), and generate daily and weekly summary reports (in CSV, Excel, or PDF format). The program shall support multithreading or asynchronous processing to optimize processing efficiency for large datasets, and display real-time progress and processing rate in the console. The code shall meet enterprise deployment requirements: configurable parameters (data directory, database connection, analysis dimensions), robust exception handling (e.g., file read failures, data anomalies), logging (start/end time, number of processed files, error details), clear and maintainable code structure. The code shall be within 300 lines.",
+        "I want to add a feature that can clean and preprocess data, including deduplication, handling missing values, standardizing time formats, and text standardization (such as removing special characters and word segmentation). Please output the complete code and keep it within 300 lines.",
+        "Could you help me convert this code to C++? It needs to be able to replicate the previous Python implementation. Please output the complete code and keep it under 300 lines.",
+        "Could you please add detailed comments to each function of this code to facilitate my future maintenance?"
+      ]
+    ]
+  }
+]

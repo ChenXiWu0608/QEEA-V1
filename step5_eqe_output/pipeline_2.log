@@ -1,0 +1,54 @@
+Verdict matrix dtypes:
+gemma4_e4b       float64
+llama3.1_8b      float64
+ministral3_8b    float64
+olmo3_7b         float64
+qwen3.5_9b       float64
+human            float64
+dtype: object
+
+======================================================================
+PART 1: Verdict Distribution (hard:soft:nice ratio)
+======================================================================
+gemma4_e4b          : hard=40 ( 40.0%), soft=14 ( 14.0%), nice=46 ( 46.0%)
+llama3.1_8b         : hard=26 ( 26.0%), soft=25 ( 25.0%), nice=49 ( 49.0%)
+ministral3_8b       : hard=44 ( 44.0%), soft=16 ( 16.0%), nice=40 ( 40.0%)
+olmo3_7b            : hard=29 ( 29.0%), soft=36 ( 36.0%), nice=35 ( 35.0%)
+qwen3.5_9b          : hard=36 ( 36.0%), soft=17 ( 17.0%), nice=47 ( 47.0%)
+human               : hard=39 ( 39.0%), soft=17 ( 17.0%), nice=44 ( 44.0%)
+
+======================================================================
+PART 2: 6x6 Spearman Rank Correlation Matrix
+======================================================================
+               gemma4_e4b  llama3.1_8b  ministral3_8b  olmo3_7b  qwen3.5_9b  human
+gemma4_e4b          1.000        0.358          0.701     0.463       0.728  0.674
+llama3.1_8b         0.358        1.000          0.261     0.377       0.357  0.316
+ministral3_8b       0.701        0.261          1.000     0.630       0.756  0.688
+olmo3_7b            0.463        0.377          0.630     1.000       0.581  0.556
+qwen3.5_9b          0.728        0.357          0.756     0.581       1.000  0.737
+human               0.674        0.316          0.688     0.556       0.737  1.000
+
+======================================================================
+PART 3: Weight Calculation (Method B: r x acc)
+======================================================================
+        model   n  r_spearman      p_value  significant  acc_weighted    score
+   gemma4_e4b 100    0.674450 1.442785e-14         True         0.815 0.549677
+  llama3.1_8b 100    0.316214 1.350405e-03         True         0.680 0.215026
+ministral3_8b 100    0.688171 2.559445e-15         True         0.805 0.553977
+     olmo3_7b 100    0.555833 1.936361e-09         True         0.755 0.419654
+   qwen3.5_9b 100    0.736636 2.439838e-18         True         0.840 0.618774
+
+======================================================================
+FINAL WEIGHTS (omega_n)
+======================================================================
+  gemma4_e4b          : omega = 0.2332  (r=0.674, acc=0.815)*
+  llama3.1_8b         : omega = 0.0912  (r=0.316, acc=0.680)*
+  ministral3_8b       : omega = 0.2350  (r=0.688, acc=0.805)*
+  olmo3_7b            : omega = 0.1780  (r=0.556, acc=0.755)*
+  qwen3.5_9b          : omega = 0.2625  (r=0.737, acc=0.840)*
+  Sum of weights: 1.0000
+
+Results saved to:
+  - weight_calculation_results.csv
+  - spearman_correlation_matrix.csv
+
